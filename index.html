@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="myBoiler">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="MyBoiler">
+		<meta name="author" content="">
+		
+		<link href="./bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="./bower_components/bootstrap/dist/css/lato_fonts.css" rel="stylesheet">
+		<link href="./bower_components/bootstrap/dist/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="https://code.angularjs.org/1.2.16/angular.min.js"></script>
+		<!-- <script src="./bower_components/angular/angular.js"></script> -->
+		<script src="./bower_components/angular-route/angular-route.js"></script>
+		<script src="./js/firebase.js"></script>
+		<script src="./js/angularfire.min.js"></script>
+		
+		<script src="./js/app.js"></script>
+		<script src="./js/controllers.js"></script>
+		<script src="./js/services.js"></script>
+		<script src="./js/directives.js"></script>
+		
+		<!-- <base href="/front/app/"></base> -->
+		
+		<title>Home</title>	
+	</head>
+	
+	<body ng-controller="mainContentCtrl">
+		<div ng-controller="headCtrl">
+			<ng-header></ng-header>
+			<div ng-view></div>
+			<ng-footer></ng-footer>
+		</div>
+	</body>
+</html>
+
+<!-- another way of template
+
+	 <div ng-include="head.url"></div> -->
+<!-- <div ng-include="mainBody.url"></div> -->
+<!-- <div ng-include="foot.url"></div> -->
