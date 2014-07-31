@@ -31,7 +31,7 @@ myBoilerApp.service('saveDataService', function()
 			
 	var newno = Math.floor((Math.random()*10000) + 1);
 			
-	var myDataRef = new Firebase('https://boiling-fire-5811.firebaseio.com/Quote');
+	var myDataRef = new Firebase('https://myboiler.firebaseio.com/Quote');
 		
 	this.saveInfo = function(selected)
 	{		

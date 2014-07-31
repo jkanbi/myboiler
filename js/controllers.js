@@ -115,7 +115,7 @@
 
 	myBoilerApp.controller('blogCtrl',['$scope', function($scope)
 	{
-		var myDataRef = new Firebase('https://boiling-fire-5811.firebaseio.com/blogdata/categories').on('child_added',show);
+		var myDataRef = new Firebase('https://myboiler.firebaseio.com/blogdata/categories').on('child_added',show);
 		function show(snap) 
 		{
 			$('.showCategory').append("<li class='cat-item'><a href='#/'>"+snap.val()+"</a></li>");
