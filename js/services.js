@@ -167,7 +167,7 @@ myBoilerApp.service('contactsService', function($location)
 			
 	var idno = Math.floor((Math.random()*10000) + 1);
 			
-	var myDataRef = new Firebase('https://boiling-fire-5811.firebaseio.com/contacts');
+	var myDataRef = new Firebase('https://myboiler.firebaseio.com/posts/contacts');
 		
 	this.saveContactInfo = function(details)
 	{		
