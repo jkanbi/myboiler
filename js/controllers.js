@@ -59,12 +59,12 @@
 		[
 			{
 				fType :'Gas', 
-				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'Safety Certificate'},{mData:'Other'}],
+				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'Safety Certificate'},{mData:'Nest Thermostat Installation'} ,{mData:'Other'}],
 				tScale: [{wScale:'ASAP'}, {wScale:'Within 4 days'}, {wScale:'Within 1 month'},{wScale:'Within 3 months'},{wScale:'I\'m Just looking for a quote'}] 
 			},
 			{			
 				fType : 'Oil',
-				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'Safety Certificate'},{mData:'Other'}],
+				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'OFTEC Certificate'},{mData:'Other'}],
 				tScale: [{wScale:'ASAP'}, {wScale:'Within 4 days'}, {wScale:'Within 1 month'},{wScale:'Within 3 months'},{wScale:'I\'m Just looking for a quote'}] 
 			},
 			{
@@ -74,12 +74,12 @@
 			},
 			{
 				fType :'Electric', 
-				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'Safety Certificate'},{mData:'Other'}],
+				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'Electrical Safety Certificate'},{mData:'Other'}],
 				tScale: [{wScale:'ASAP'}, {wScale:'Within 4 days'}, {wScale:'Within 1 month'},{wScale:'Within 3 months'},{wScale:'I\'m Just looking for a quote'}] 
 			},
 			{
 				fType :'Solid', 
-				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'Safety Certificate'},{mData:'Other'}],
+				bType : [{mData:'New Boiler Installation'},{mData:'New Central Heating'},{mData:'Boiler Maintenance \/Repair'},{mData:'Boiler Service'},{mData:'HETAS Certificate'},{mData:'Other'}],
 				tScale: [{wScale:'ASAP'}, {wScale:'Within 4 days'}, {wScale:'Within 1 month'},{wScale:'Within 3 months'},{wScale:'I\'m Just looking for a quote'}] 
 			}
 		];
