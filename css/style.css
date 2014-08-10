@@ -62,7 +62,7 @@ a:hover,a:focus{outline:none; text-decoration:none}
 .color{color:#312f5e}
 .text-underline { text-decoration:underline }
 .bg-white{background:#ffffff; }
-.nav-bottom{border-bottom:5px solid #ececec;opacity: 0.5; position:fixed; width:100%; height:0px; z-index:1; padding:0px;margin:0px}
+.nav-bottom{border-bottom:5px solid #ececec;opacity: 0.5; position:relative; width:100%; height:0px; z-index:1; padding:0px;margin:0px}
 /**************** banner Start *************************/
 .banner{width:100% }
 .banner img{width:100%}
