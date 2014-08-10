@@ -32,10 +32,12 @@
 	</head>
 	
 	<body ng-controller="mainContentCtrl">
-		<div ng-controller="headCtrl">
-			<ng-header></ng-header>
-			<div ng-view></div>
-			<ng-footer></ng-footer>
+		<div id="pcontainer">
+			<div ng-controller="headCtrl">
+				<ng-header></ng-header>
+				<div ng-view></div>
+				<ng-footer></ng-footer>
+			</div>
 		</div>
 	</body>
 </html>
