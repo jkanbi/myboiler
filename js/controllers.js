@@ -9,7 +9,7 @@
 	{	
 		$scope.displayMenus = function()
 		{
-			$scope.menu1="FIND ENGINEER";
+			$scope.menu1="FIND AN ENGINEER";
 			$scope.menu2="SERVICES";
 			$scope.menu3="MANUALS";
 			$scope.menu4="TOP TIPS";
