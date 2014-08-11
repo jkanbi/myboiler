@@ -9,11 +9,11 @@
 	{	
 		$scope.displayMenus = function()
 		{
-			$scope.menu1="MANUALS";
-			$scope.menu2="FIND ENGINEER";
-			$scope.menu3="TOP TIPS"
-			$scope.menu4="BLOG";
-			$scope.menu5="SERVICES";
+			$scope.menu1="FIND ENGINEER";
+			$scope.menu2="SERVICES";
+			$scope.menu3="MANUALS";
+			$scope.menu4="TOP TIPS";
+			$scope.menu5="BLOG";
 			$scope.menu6="SERVICES";
 		}
 			
@@ -38,11 +38,11 @@
 		$scope.showCMenus = function()
 		{
 			$scope.displayMenus();
-			$("#menu2").attr("href","#/consumer-engineer-search");
-			$("#menu3").attr("href","#/consumer-tips");
-			$("#menu4").attr("href","#/cblog");
+			$("#menu2").attr("href","href","#/consumer-services");
+			$("#menu3").attr("href","https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers");
+			$("#menu4").attr("href","#/consumer-tips");
 			$("#menu5").show();
-			$("#menu5").attr("href","#/consumer-services");
+			$("#menu5").attr("href","#/cblog");
 			$("#menu6").attr("href","#/consumer-services");
 			$("#cbtn").hide();
 			$("#ebtn").show();
