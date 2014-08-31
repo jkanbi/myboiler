@@ -13,11 +13,17 @@
 		
 		if(jQuery.inArray(url, clinks) != '-1')
 		{
-			return { restrict:'E', templateUrl: crootdir+'header.html' };
+			return { 
+				restrict:'E', 
+				templateUrl: crootdir+'header.html' 
+			};
 		}
 		else if(jQuery.inArray(url, elinks) != '-1')
 		{ 
-			return { restrict:'E', templateUrl: erootdir+'header.html' }; 
+			return { 
+				restrict:'E', 
+				templateUrl: erootdir+'header.html' 
+			}; 
 		}
 	});
 
@@ -27,10 +33,16 @@
 		
 		if(jQuery.inArray(url, clinks) != '-1')
 		{
-			return { restrict:'E', templateUrl: crootdir+'footer.html' };
+			return { 
+				restrict:'E', 
+				templateUrl: crootdir+'footer.html' 
+			};
 		}
 		else if(jQuery.inArray(url, elinks) != '-1')
 		{
-			return { restrict:'E', templateUrl: erootdir+'footer.html' }; 
+			return { 
+				restrict:'E', 
+				templateUrl: erootdir+'footer.html' 
+			}; 
 		}
 	});
