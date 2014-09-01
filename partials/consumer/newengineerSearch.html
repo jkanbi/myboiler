@@ -109,7 +109,7 @@
 						<div class="col-md-8">
 							<div>&nbsp;</div>
 							<div class="row">
-								<div class="col-md-2 col-xs-12 col-sm-12">
+								<div class="col-md-3 col-xs-12 col-sm-12">
 									<div class="form-group">
 										<select name="title" id="title" class="form-group form-control rounded-border0" tabindex="" ng-model="selected.usr_salutation">
 											<option value="" selected>*Title ---</option>	<!-- This line needs some work -->
@@ -122,7 +122,7 @@
 										<!-- <span ng-show="submitted && selected.fuel_type.fType==null" class="error">Please select a fuel type</span>			-->
 									</div>
 								</div>
-								<div class="col-md-5 col-xs-12 col-sm-12">
+								<div class="col-md-4 col-xs-12 col-sm-12">
 									<div class="form-group">
 										<input type="text" name="first_name" ng-model="selected.user_fname" placeholder="First name" id="first_name" class="form-control rounded-border0">
 									</div>
@@ -192,13 +192,13 @@
 							<div>&nbsp;</div>
 
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6">
 									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
 										<input type="text" name="house_number" ng-model="selected.houseno" id="house_number" placeholder="*House number" class="form-control rounded-border0" ng-class="{errborder:submitted && engg_search.house_number.$error.required}" required>
 										<span ng-show="submitted && engg_search.house_number.$error.required" ng-hide="true" class="error">Please enter House no or name</span>
 									</div>
 								</div>
-								<div class="col-md-6" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+								<div class="col-md-6 col-sm-6" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
 									<div class="form-group">
 										<input type="text" name="postal_code" ng-model="selected.postalcode" id="postal_code" placeholder="*Postal code" class="form-control rounded-border0" style="text-transform: uppercase;" maxlength="6" ng-class="{errborder:submitted && engg_search.postal_code.$error.required}" required>
 										<span ng-show="submitted && engg_search.postal_code.$error.required" ng-hide="true" class="error">Please enter postal code</span>
@@ -206,7 +206,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-xs-12 col-sm-12">
+								<div class="col-md-6 col-xs-12 col-sm-6">
 									<div class="form-group">
 										<select tabindex="" name="property_type" ng-model="selected.propertyType" id="property_type" class="form-group form-control rounded-border0">
 											<option value="" selected="selected" >Please Select Property Type ---</option>
@@ -218,9 +218,8 @@
 										</select>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-xs-12 col-sm-12">
+
+								<div class="col-md-6 col-xs-12 col-sm-6">
 									<div class="form-group">
 										<select tabindex="" name="property_owner" ng-model="selected.propertyOwner" id="property_owner" class="form-group form-control rounded-border0">
 											<option selected="selected" value="">--Please Select--</option>
@@ -234,7 +233,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-xs-12 col-sm-12">
+								<div class="col-md-6 col-xs-12 col-sm-12">
 									<div class="form-group">
 										<div class="checkbox">
 											<label>
