@@ -5,7 +5,8 @@ var rootdir = "partials/";
 var crootdir = "partials/consumer/";
 var erootdir = "partials/engineer/";
 
-var myBoilerApp = angular.module('myBoiler',['ngRoute']);
+//http://stackoverflow.com/questions/24227239/unknown-provider-firebaseprovider-firebase
+var myBoilerApp = angular.module('myBoiler',['ngRoute', 'firebase']);
 
 myBoilerApp.config(['$routeProvider', function($routeProvider) 
 {
