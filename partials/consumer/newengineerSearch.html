@@ -149,26 +149,12 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
-										<input type="text" name="house_number" ng-model="selected.houseno" id="house_number" placeholder="*House number" class="form-control rounded-border0" ng-class="{errborder:submitted && engg_search.house_number.$error.required}" required>
-										<span ng-show="submitted && engg_search.house_number.$error.required" ng-hide="true" class="error">Please enter House no or name</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
 										<input type="text" ng-model="selected.phoneno" name="mphone" id="phone" placeholder="*Phone number" class="form-control rounded-border0" maxlength="10" ng-pattern="PHONE_EXP" ng-class="{errborder:submitted && (engg_search.mphone.$error.required || engg_search.mphone.$error.pattern)}" required/>
 										<span ng-show="submitted && engg_search.mphone.$error.required" ng-hide="true" class="error">Please enter valid phone number</span>
 										<span ng-show="submitted && engg_search.mphone.$error.pattern" ng-hide="true" class="error">Only 10 digit numbers</span>
 									</div>
 								</div>
-								<div class="col-md-6" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
-									<div class="form-group">
-										<input type="text" name="postal_code" ng-model="selected.postalcode" id="postal_code" placeholder="*Postal code" class="form-control rounded-border0" style="text-transform: uppercase;" maxlength="6" ng-class="{errborder:submitted && engg_search.postal_code.$error.required}" required>
-										<span ng-show="submitted && engg_search.postal_code.$error.required" ng-hide="true" class="error">Please enter postal code</span>
-									</div>
-								</div>
+
 							</div>
 
 							<div class="row">
@@ -204,6 +190,21 @@
 						</div>
 						<div class="col-md-8">
 							<div>&nbsp;</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+										<input type="text" name="house_number" ng-model="selected.houseno" id="house_number" placeholder="*House number" class="form-control rounded-border0" ng-class="{errborder:submitted && engg_search.house_number.$error.required}" required>
+										<span ng-show="submitted && engg_search.house_number.$error.required" ng-hide="true" class="error">Please enter House no or name</span>
+									</div>
+								</div>
+								<div class="col-md-6" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+									<div class="form-group">
+										<input type="text" name="postal_code" ng-model="selected.postalcode" id="postal_code" placeholder="*Postal code" class="form-control rounded-border0" style="text-transform: uppercase;" maxlength="6" ng-class="{errborder:submitted && engg_search.postal_code.$error.required}" required>
+										<span ng-show="submitted && engg_search.postal_code.$error.required" ng-hide="true" class="error">Please enter postal code</span>
+									</div>
+								</div>
+							</div>
 							<div class="row">
 								<div class="col-md-12 col-xs-12 col-sm-12">
 									<div class="form-group">
