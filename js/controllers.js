@@ -22,7 +22,8 @@
 			$scope.displayMenus();
 			$("#menu1").attr("href","#/consumer-engineer-search");  //Added to stop engineer tools link showing up instead bug.
 			$("#menu2").attr("href","href","#/consumer-services");
-			$("#menu3").attr("href","https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers");
+			//$("#menu3").attr("href","https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers");
+			$("#menu3").attr("href","#/cmanuals");
 			$("#menu4").attr("href","#/consumer-tips");
 			$("#menu5").show();
 			$("#menu5").attr("href","#/cblog");
@@ -53,7 +54,28 @@
 		
 	});
 
-	myBoilerApp.controller('manualsCtrl',function($scope) {});
+	myBoilerApp.controller('manualsCtrl',['$scope','$firebase',function($scope,$firebase) {
+			var ref =  new Firebase("https://myboiler.firebaseio.com/brands");
+			var sync = $firebase(ref);
+			var syncobject = sync.$asObject();
+			$scope.documents = syncobject;
+			syncobject.$loaded().then(function() {
+    		 console.log("record has id", syncobject.$id);
+  			});
+
+			//ref.on('child_added', function(snapshot) {
+        	//	var message = snapshot.val();
+        	//	$scope.documents = message;
+        		//displayChatMessage (message.name, message.text);
+      		//});  
+			//sync.$loaded().then(function() {
+     		//	console.log("list has " + list.length + " items");
+  			//});
+			
+
+			//$scope.documents = $firebase(ref).$asobject();
+		}
+	]);
 
 	// will display Manual page's content
 
