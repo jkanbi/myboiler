@@ -12,29 +12,11 @@
 			$scope.menu1="FIND AN ENGINEER";
 			$scope.menu2="SERVICES";
 			$scope.menu3="MANUALS";
-			$scope.menu4="TOP TIPS";
+			$scope.menu4="USEFUL TIPS";
 			$scope.menu5="BLOG";
 			$scope.menu6="SERVICES";
 		}
-			
-		$scope.showMenus = function()	
-		{
-			$scope.menu1 = "TOOLS";
-			$scope.menu2 = "MANUALS";
-			$scope.menu3 = "TOP TIPS";
-			$scope.menu4 = "BLOG";
-			$scope.menu5 = "";
-			$scope.menu6 = "TOOLS";
-			
-			$("#menu2").attr("href","https://myboiler.com/v2/manuals/index.php?ut=engineer&d=Boilers");
-			$("#menu3").attr("href","#/engineer-tips");
-			$("#menu4").attr("href","#/eblog");
-			$("#menu5").hide();
-			$("#menu6").attr("href","#/engineer-tools");
-			$("#cbtn").show();
-			$("#ebtn").hide();
-		}
-		
+
 		$scope.showCMenus = function()
 		{
 			$scope.displayMenus();
@@ -47,6 +29,27 @@
 			$("#cbtn").hide();
 			$("#ebtn").show();
 		}
+			
+		$scope.showMenus = function()	
+		{
+			$scope.menu1 = "TOOLS";
+			$scope.menu2 = "MANUALS";
+			$scope.menu3 = "USEFUL TIPS";
+			$scope.menu4 = "BLOG";
+			$scope.menu5 = "";
+			$scope.menu6 = "TOOLS";
+			
+			$("#menu1").attr("href","#/engineer-tools");  //Added to stop consumer-engineer-form link showing up instead bug.
+			$("#menu2").attr("href","https://myboiler.com/v2/manuals/index.php?ut=engineer&d=Boilers");
+			$("#menu3").attr("href","#/engineer-tips");
+			$("#menu4").attr("href","#/eblog");
+			$("#menu5").hide();
+			$("#menu6").attr("href","#/engineer-tools");
+			$("#cbtn").show();
+			$("#ebtn").hide();
+		}
+		
+		
 	});
 
 	myBoilerApp.controller('manualsCtrl',function($scope) {});
