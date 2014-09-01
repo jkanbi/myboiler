@@ -27,8 +27,18 @@ myBoilerApp.service('saveDataService', function()
 {
 	var wTime="N/A"; 
 	var wDescription="N/A";
+	//var timeStamp = Date.now()
+	//var submitTimeStamp = (timeStamp | date:'medium') ;
+	//var submitTimeStamp = new Date().toGMTString(); 
+	var now = new Date();
+	var uniqueId = now.getTime();
+	var TimeStamp = now.toGMTString();
+	//var timeNow = now.getTime + " " +;
+	//var dateNow = now.getDate;
+
 	var cTime, alterPhno, propertyType, propertyOwn, usrSalutation, firstName, lastName, subscribe;
-			
+	
+	//used to generate unique non sequential no for the id:	
 	var newno = Math.floor((Math.random()*10000) + 1);
 			
 	var myDataRef = new Firebase('https://myboiler.firebaseio.com/posts/jobLeads');
@@ -120,39 +130,60 @@ myBoilerApp.service('saveDataService', function()
 		/*  alert(newRef.name());  */
 		newRef.set(
 		{
-			id: newno,
-			
-			BoilerType: selected.fuel_type.fType, 
-			
-			JobType: selected.jType.mData, 
-			
-			WorkScaleTime: wTime,
-			
-			WorkDescription: wDescription,
-			
-			salutation: usrSalutation,
-			
-			FirstName: firstName,
+			id: uniqueId,
 
-			LastName: lastName,
+			TimeStamp: TimeStamp, 
+
+			Subscribefor: subscribe,
+
+			JobDetails:{
 			
-			user_email: selected.inputemail, 
+				BoilerType: selected.fuel_type.fType, 
+				
+				JobType: selected.jType.mData, 
+				
+				WorkScaleTime: wTime,
+				
+				WorkDescription: wDescription,
+
+				BestTimeToCall: cTime,
+				
+				},
+
+			ContactDetails:
+				{
+
+				salutation: usrSalutation,
 			
-			HouseNameNo: selected.houseno, 
+				FirstName: firstName,
+
+				LastName: lastName,
 			
-			Phoneno: selected.phoneno, 
+				user_email: selected.inputemail, 
 			
-			PostCode: selected.postalcode,
+				Phoneno: selected.phoneno, 
+				
+				AlternatePhone: alterPhno,
+
+				HouseNameNo: selected.houseno, 
+
+				PostCode: selected.postalcode,
+
+				PropertyOwner: propertyOwn,
+
+				},
 			
-			BestTimeToCall: cTime,
+
+			PropertyDetails:
+				{
 			
-			AlternatePhone: alterPhno,
-			
-			PropertyType: propertyType,
-			
-			PropertyOwner: propertyOwn,
-			
-			Subscribefor: subscribe
+				PropertyType: propertyType,
+
+				HouseNameNo: selected.houseno, 
+
+				PostCode: selected.postalcode,
+
+				}
 		});
 	}
 });
