@@ -135,7 +135,7 @@
 			var min = 1000;
 			var max = 9999;
 			var num = Math.floor(Math.random() * (max - min + 1)) + min;
-			alert(num);
+			//alert(num);
 			$scope.generatedCaptcha = num;
 		}
 		
