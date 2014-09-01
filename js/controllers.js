@@ -20,6 +20,7 @@
 		$scope.showCMenus = function()
 		{
 			$scope.displayMenus();
+			$("#menu1").attr("href","#/consumer-engineer-search");  //Added to stop engineer tools link showing up instead bug.
 			$("#menu2").attr("href","href","#/consumer-services");
 			$("#menu3").attr("href","https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers");
 			$("#menu4").attr("href","#/consumer-tips");
