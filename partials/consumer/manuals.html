@@ -33,16 +33,17 @@
 			<div class="container paddall " >
 				<div>&nbsp;</div>
 			<!-- refactor tables into 																div-->
-				<div ng-repeat = "doc in documents"  style="height:60px;"> 
+				<div ng-repeat = "b in brands"  style="height:60px;"> 
 					<div style="height:5px;background:#ebebeb;"></div>
-						<a href="https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers%2F{{doc.BrandName}}/">
+						<a href="#/cmanuals/brands/{{b.BrandName}}/">
+						<!-- <a href="https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers%2F{{doc.BrandName}}/"> -->
 							<div class="resultpaddall boilername" class="col-md-12 col-xs-12 col-sm-12">
 								<!--url was here -->
 								<div class="col-md-1 col-xs-1 col-sm-1">
-										<img src="./default-icons/_folder.gif">
+										<img src="./img/file-icons/_folder.gif">
 								</div>
 								<div class="col-md-8 col-xs-3 col-sm-3">
-									<div class="font-size18">{{doc.BrandName}}</div>
+									<div class="font-size18">{{b.BrandName}}</div>
 								</div>
 								<div class="col-md-1 col-xs-1 col-sm-2 pull-right">
 									<img alt="" src="https://myboiler.com/v2/front/img/arrow.png"  height="40">
