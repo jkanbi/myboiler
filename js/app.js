@@ -10,6 +10,11 @@ var myBoilerApp = angular.module('myBoiler',['ngRoute', 'firebase']);
 
 myBoilerApp.config(['$routeProvider', function($routeProvider) 
 {
+	//commenting out this line (switching to hashbang mode) breaks the app
+    //-- unless # is added to the templates
+    
+    //$locationProvider.html5Mode(true);
+
     $routeProvider.when('/', {
 		templateUrl: crootdir +'consumer_main_content.html',
 		controller: 'mainContentCtrl'
@@ -21,9 +26,12 @@ myBoilerApp.config(['$routeProvider', function($routeProvider)
 	  .when('/cmanuals', {
         templateUrl: crootdir +'manuals.html',
         controller: 'manualsCtrl'
-      })
-	  .when('/emanuals', {
+      }).when('/emanuals', {
         templateUrl: rootdir+'manuals.html'
+      })
+	  .when('/cmanuals/brands/:brandId', {
+        templateUrl: crootdir+'documents.html',
+        controller:'documentsCtrl',
       })
 	  .when('/consumer-engineer-search', {
 		templateUrl: crootdir+'newengineerSearch.html',

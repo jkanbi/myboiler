@@ -1,0 +1,68 @@
+<link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+	<div id="manuals">
+		<div class="hidden-phone">
+			<div class="bg-gray">
+				<div class="container">
+					<div class="height22">
+						
+					</div>
+					<div id="services">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-heading2">
+			<h2>MANUALS</h2>
+		</div>
+
+		<div class="">
+			<div class="container paddall">
+				<div class="row">
+					<div class="height22"></div>
+					<div class="col-md-2"></div>
+					<div class="col-md-8 text-center heading2">Search for Boiler manuals, user guides and other documents for your Boiler</div>
+					<div class="col-md-2"></div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-gray">
+			<div class="container paddall " >
+				<div>
+					<!-- <a href="#/cmanuals">-->
+						<div class="resultpaddall boilername" class="col-md-12 col-xs-12 col-sm-12">
+							<div class="col-md-1 col-xs-1 col-sm-1">
+							</div>
+							<div class="col-md-8 col-xs-3 col-sm-3">
+								<div class="font-size18"><a href="#/cmanuals">Back to Index </a>/ {{brandId}}</div>
+							</div>
+						</div>
+					<!--</a>-->
+				</div>
+				
+				<div>&nbsp;</div>
+				<div ng-repeat = "doc in documents"  style="height:60px;"> 
+					<div style="height:5px;background:#ebebeb;"></div>
+						<a href=" {{doc.DefaultURL}}">
+							<div class="resultpaddall boilername" class="col-md-12 col-xs-12 col-sm-12">
+								<div class="col-md-1 col-xs-1 col-sm-1">
+										<img src="/img/file-icons/{{doc.FileType}}.gif">
+								</div>
+								<div class="col-md-8 col-xs-7 col-sm-5">
+									<div class="font-size18">{{doc.DocumentName}}</div>
+									<div>{{doc.FileType}}</div>
+								</div>
+								<div class="col-md-1 col-xs-1 col-sm-2 pull-right">
+									<img alt="" src="https://myboiler.com/v2/front/img/arrow.png"  height="40">
+								</div>
+							</div>
+						</a>						
+						<div style="height:5px;background:#ebebeb;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
