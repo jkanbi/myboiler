@@ -197,11 +197,18 @@ myBoilerApp.service('contactsService', function($location)
 	var subject, comment, usrSalutation, captchaCode, usrType;
 			
 	var idno = Math.floor((Math.random()*10000) + 1);
-			
+	
+	var now = new Date();
+	var uniqueId = now.getTime();
+	var TimeStamp = now.toGMTString();
+
 	var myDataRef = new Firebase('https://myboiler.firebaseio.com/posts/contacts');
+
 		
 	this.saveContactInfo = function(details)
 	{		
+		
+		/*
 		if(url == "/consumer-contact")
 		{
 			usrType = "consumer";
@@ -210,14 +217,25 @@ myBoilerApp.service('contactsService', function($location)
 		{
 			usrType = "engineer";
 		}
+		*/
+
+		if(details.usrType==undefined || details.usrType=='')
+		{
+			usrType = "N/A";
+		}
+		else
+		{
+			usrType = details.usrType;
+		}
 		
+
 		if(details.usrsalutation==undefined || details.usrsalutation=='')
 		{
 			usrSalutation = "N/A";
 		}
 		else
 		{
-			usrSalutation = details.usrSalutation;
+			usrSalutation = details.usrsalutation;
 		}
 		
 		if(details.subject==undefined)
@@ -244,21 +262,15 @@ myBoilerApp.service('contactsService', function($location)
 		
 		newContactRef.set(
 		{
-			id : idno,
-			
+			TimeStamp : TimeStamp,
+			userType : usrType,
+			title : usrSalutation,
 			firstName : details.first_name,
-			
 			lastName : details.last_name,
-			
 			emailId : details.email,
-			
 			contactSubject : subject,
-			
 			userComment : details.comment,
-			
-			captchaText :  captchaCode,
-			
-			userType : usrType
+			id : idno
 		});
 	}
 });
