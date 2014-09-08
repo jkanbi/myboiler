@@ -88,6 +88,14 @@ myBoilerApp.config(['$routeProvider', function($routeProvider)
 		templateUrl: crootdir+'consumercontact.html',
 		controller: 'consumerContactController'
 	  })
+	  .when('/register', {
+		templateUrl: rootdir+'register.html',
+		controller: 'AuthCtrl'
+	  })
+	  .when('/login', {
+		templateUrl: rootdir+'login.html',
+		controller: 'AuthCtrl'
+	  })
 	  .otherwise ({ redirectTo: '/index.html' });
 	  
 	 /*  if(window.history && window.history.pushState)
