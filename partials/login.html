@@ -12,19 +12,19 @@
 				<div>&nbsp;</div>
 <div class="row">
 					<div class="col-md-6 col-xs-12 col-sm-12">
-						<form class="form-horizontal" ng-submit ="login()" role="form" id="join_us" method="post" novalidate="novalidate">
+						<form class="form-horizontal" name= "authenticate" ng-submit ="login()" role="form" id="join_us" method="post" novalidate="novalidate">
 							<input type="hidden" name="page_type" value="Consumer">
 							<div class="form-group">
 								<label for="email" class="col-sm-2 control-label">Email</label>
 								<div class="col-sm-10">
-									<input type="email" ng.model = "user.email" name="email" id="email" class="form-control" placeholder="Email address">
+									<input type="email" ng-model = "user.email" name="email" id="email" class="form-control" placeholder="Email address">
 								</div>
 							</div>
 
 							<div class="form-group">
 								<label for="password" class="col-sm-2 control-label">Password</label>
 								<div class="col-sm-10">
-									<input type="password" ng.model ="user.password" name="password" id="password" class="form-control" placeholder="Password">
+									<input type="password" ng-model ="user.password" name="password" id="password" class="form-control" placeholder="Password">
 								</div>
 							</div>
 
@@ -37,7 +37,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-10">
-									<button type="submit" class="btn btn-default" onClick="parent.location='#/register'">Register</button> &nbsp;
+									<button type="submit" class="btn btn-default" >Register</button> &nbsp;<!--onClick="parent.location='#/register'" -->
 
 								</div>
 								<div>&nbsp;</div>
@@ -56,7 +56,7 @@
 
 						  <div class="col-md-12 col-xs-12 col-sm-3">
 
-								<a href="javascript:void(0)" onclick="javascript:third_party_login('facebook');" sl-processed="1"><div class="facebook"><span><img src="https://myboiler.com/v2/front/img/facebook-icon.png">&nbsp;</span><span>Login using Facebook</span> </div><div>&nbsp;</div></a>
+								<a href="" ng-click="facebooklogin();" sl-processed="1"><div class="facebook"><span><img src="https://myboiler.com/v2/front/img/facebook-icon.png">&nbsp;</span><span>Login using Facebook</span> </div><div>&nbsp;</div></a>
 								<!-- <a href="javascript:void(0)" onclick="javascript:third_party_login('facebook');">
 									 <i class="fa fa-facebook-square fontSize"></i> Join with Facebook
 									<img src="https://myboiler.com/v2/front/img/facebook-login.png" />
@@ -66,7 +66,7 @@
 
 							<div class="col-md-12 col-xs-12 col-sm-3">
 
-							<a href="javascript:void(0)" onclick="javascript:third_party_login('google');" sl-processed="1"><div class="google-plus"><span><img src="https://myboiler.com/v2/front/img/google-icon.png">&nbsp;</span><span>Login Google Plus</span> </div></a>
+							<a href="" ng-click="googlelogin()" sl-processed="1"><div class="google-plus"><span><img src="https://myboiler.com/v2/front/img/google-icon.png">&nbsp;</span><span>Login Google Plus</span> </div></a>
 								<!-- <a href="javascript:void(0)" onclick="javascript:third_party_login('google');">
 									 <i class="fa fa-google-plus-square fontSize"></i> Join with Google Plus
 									<img src="https://myboiler.com/v2/front/img/google-plus-login.png" />

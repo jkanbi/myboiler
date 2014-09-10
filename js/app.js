@@ -8,6 +8,8 @@ var erootdir = "partials/engineer/";
 //http://stackoverflow.com/questions/24227239/unknown-provider-firebaseprovider-firebase
 var myBoilerApp = angular.module('myBoiler',['ngRoute', 'firebase']);
 
+myBoilerApp.constant('FIREBASE_URL','https://myboiler.firebaseio.com/') 
+
 myBoilerApp.config(['$routeProvider', function($routeProvider) 
 {
 	//commenting out this line (switching to hashbang mode) breaks the app
