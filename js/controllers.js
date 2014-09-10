@@ -1,5 +1,7 @@
 /* Controllers */
 
+(function () {
+
 // create controller name
 
 //will display main content of index page
@@ -215,3 +217,5 @@
 			$scope.consumercontact.$setPristine();
 		}
 	});
+
+})();
