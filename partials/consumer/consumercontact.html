@@ -55,7 +55,7 @@
 									<div class="row">	
 										<div class="col-md-3 col-xs-12 col-sm-12">
 											<div class="form-group" ng-class="{true:'error'}[contactsubmit && consumercontact.usrType.$error]">
-												<label for="usrType">Visitor Type:</label>
+												<label for="usrType" ng-show="false">Visitor Type:</label>
 												<select name="usrType" id="usrType" class="form-group form-control rounded-border0" ng-model="contact.usrType" ng-class="{errborder:contactsubmit && consumercontact.usrType.$error.required}" tabindex="" required>
 													<option value="" selected>Select User Type</option>
 													<option value="Consumer" >I'm a Consumer</option>
@@ -75,7 +75,7 @@
 									<div class="row">
 										<div class="col-md-2 col-xs-12 col-sm-12">
 											<div class="form-group">
-												<label for="title">Title:</label>
+												<label for="title" ng-show="false">Title:</label>
 												<select name="title" id="title" class="form-group form-control rounded-border0" ng-model="contact.usrsalutation" tabindex="">
 													<option value="" selected>Title</option>
 													<option value="Mr.">Mr</option>
@@ -88,14 +88,14 @@
 										</div>
 										<div class="col-md-5 col-xs-12 col-sm-12">
 											<div class="form-group" ng-class="{true:'error'}[contactsubmit && consumercontact.first_name.$error]">
-												<label for="first_name">First Name:*</label>
+												<label for="first_name" ng-show="false">First Name:*</label>
 												<input type="text" name="first_name" ng-model="contact.first_name" placeholder="First name" id="first_name" class="form-control rounded-border0" ng-class="{errborder:contactsubmit && consumercontact.first_name.$error.required}" required>
 												<span class="error" ng-show="contactsubmit && consumercontact.first_name.$error.required">Please enter a first name</span>
 											</div>
 										</div>
 										<div class="col-md-5 col-xs-12 col-sm-12">
 											<div class="form-group" ng-class="{true:'error'}[contactsubmit && consumercontact.last_name.$error]">
-												<label for="last_name">Last Name:*</label>
+												<label for="last_name" ng-show="false">Last Name:*</label>
 												<input type="text" name="last_name" ng-model="contact.last_name" placeholder="Last name" id="last_name" class="form-control rounded-border0" ng-class="{errborder:contactsubmit && consumercontact.last_name.$error.required}" required>
 												<span class="error" ng-show="contactsubmit && consumercontact.last_name.$error.required">Please enter a last name</span>
 											</div>
@@ -105,7 +105,7 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group" ng-class="{true:'error'}[contactsubmit && consumercontact.email.$error]">
-												<label for="email">Email:*</label>
+												<label for="email" ng-show="false">Email:*</label>
 												<input type="text" name="email" ng-model="contact.email" ng-pattern="EMAIL_REGEXP" id="email" placeholder="Email" class="form-control rounded-border0" ng-class="{errborder:contactsubmit && (consumercontact.email.$error.required || consumercontact.email.$error.pattern)}" required>
 												<span class="error" ng-show="contactsubmit && consumercontact.email.$error.required">Please enter an email address</span>
 												<span class="error" ng-show="contactsubmit && consumercontact.email.$error.pattern">Please enter a valid email address</span>
@@ -119,7 +119,7 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group">
-												<label for="subject">Subject:</label>
+												<label for="subject" ng-show="false">Subject:</label>
 												<input type="text" name="subject" id="subject" ng-model="contact.subject" placeholder="Subject" class="form-control rounded-border0">
 											</div>
 										</div>
@@ -128,7 +128,7 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group" ng-class="{true:'error'}[contactsubmit && consumercontact.comment.$error]">
-												<label for="house_number">Comment:*</label>
+												<label for="house_number" ng-show="false">Comment:*</label>
 												<textarea rows="3" name="comment" ng-model="contact.comment" id="comment" placeholder="Comment" class="form-control rounded-border0" required></textarea>
 												<span class="error" ng-show="contactsubmit && consumercontact.comment.$error.required">Please enter a comment</span>
 												<span class="error" ng-show="contactsubmit && consumercontact.comment.$error.pattern">Comment should be descriptive</span>
