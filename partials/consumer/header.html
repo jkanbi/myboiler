@@ -17,8 +17,8 @@
 				</a>
 			</div>
 			
-			<div id="logo" class="navbar-collapse collapse" ng-init="displayMenus()">
-				<ul class="nav navbar-nav pull-right mrgntp10 mrgnbt14">
+			<div id="logo" class="navbar-collapse" ng-init="displayMenus()">
+				<ul class="nav navbar-nav pull-left mrgntp10 mrgnbt14">
 					<!-- New manual link -->
 					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu1">
 						<a id="menu1" href="#/consumer-engineer-search" sl-processed="1">{{menu1}}</a>
@@ -35,12 +35,14 @@
 					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu5">
 						<a id="menu5" href="#/cblog" sl-processed="1">{{menu5}}</a>
 					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right mrgntp10 mrgnbt14">
 					<div class="pull-left mrgntp5" id="ebtn">
 						<a href="#/engineer" sl-processed="1">
 							<button type="button" class="btn btn-primary-custom" ng-click="showMenus(); engclicked=true;">ENGINEER SITE<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button>
 						</a>
 					</div>
-					<div class="pull-left mrgntp5" id="cbtn">
+					<div class="pull-right mrgntp5" id="cbtn">
 						<a href="#/consumer" sl-processed="1">
 							<button type="button" class="btn btn-primary-custom" ng-click="showCMenus(); conclicked=true;">CONSUMER SITE<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button>
 						</a>
