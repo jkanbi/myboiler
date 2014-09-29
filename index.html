@@ -8,14 +8,20 @@
 		<meta name="description" content="MyBoiler">
 		<meta name="author" content="">
 		
-		<link href="./bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<!-- <link href="./bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"> -->   <!-- this bootstrap.css  Bootstrap v3.1.1 is causing issues when using CDN. --> 
+		<!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css" rel="stylesheet"> <!-- in version 3.1.1-->
+		<link href="./bootstrap320/css/bootstrap.css" rel="stylesheet">
 		<link href="./bower_components/bootstrap/dist/css/lato_fonts.css" rel="stylesheet">
 		<link href="./bower_components/bootstrap/dist/css/font-awesome.min.css" rel="stylesheet">
 		<link href="./css/style.css" rel="stylesheet">
 		
+		
 		<script src= "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
 		<!-- <script src="./js/jquery.min.js"></script> -->
-		<script src="./js/bootstrap.min.js"></script>
+
+		<!-- <script src="./js/bootstrap.min.js"></script> <!-- Bootstrap v3.0.3-->  
+		<!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> <!-- in version 3.2.0 menu does not collapse -->
+		<script src="./bootstrap320/js/bootstrap.min.js"></script>
 		<script src="https://code.angularjs.org/1.2.23/angular.js"></script>
 		<!-- <script src="./bower_components/angular/angular.js"></script> -->
 		<script src="https://code.angularjs.org/1.2.23/angular-route.js"></script>
