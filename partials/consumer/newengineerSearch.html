@@ -1,0 +1,288 @@
+<div class="nav-bottom">&nbsp;</div>
+
+<div class="hidden-phone">
+	<div class="bg-gray">
+		<div class="container">
+			<div class="height22"></div>
+			<div id="services"></div>
+		</div>
+	</div>
+</div>
+
+<div class="main-heading2">
+	<h2>Find An Engineer</h2>
+</div>
+
+<div class="container">
+	<div class="hidden-phone">
+		<div class="bg">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="innerEnginer ">
+						<div>&nbsp;</div>
+						<p>Your boiler is the heart of your home, it keeps the warmth flowing. It deserves the best professional care. Vetted Engineers who specialise and care about the people also care about your home heating. Fill the form below and we will find you upto 4 engineers to provide you FREE no obligation quotes. <p>
+						<p>*Please Note we are currently only providing engineers for the London Area.</p>
+
+						<!-- Need a MyBoiler vetted boiler Engineer? -->
+					</div>
+				</div>
+			</div>
+
+			<div>&nbsp;</div>
+			<div class="border-bottom-gray2">&nbsp;</div>
+			
+			<!----  Find an engineer Start   ---->
+			<form role="form" name="engg_search" method="post" action="" id="find_engg" ng-submit="saveData()">		
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-10">
+									<div class="right-side">
+										<h3>1. Tell us about your enquiry...</h3>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div>&nbsp;</div>
+							<div class="row">
+								<div class="col-md-12 col-xs-12 col-sm-12">
+									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.fuelType.$error]">
+										<select tabindex="" name="fuel_type" ng-model="selected.fuel_type" ng-options="fuelType.fType for fuelType in BoilerFuelTypes" id="fuel_type" class="form-group form-control rounded-border0 brd-input" required>
+											<option value="" selected>*Please Select Boiler Fuel Type --</option>
+										</select>
+										<span ng-show="submitted && selected.fuel_type.fType==null" class="error">Please select a fuel type</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="row" id="job_type_box" ng-hide="true" ng-show="selected.fuel_type">
+								<div class="col-md-12 col-xs-12 col-sm-12">
+									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.jType.$error]">
+										<select tabindex="" ng-disabled="!selected.fuel_type" name="jType" id="job_type" ng-model="selected.jType" ng-options="j.mData for j in selected.fuel_type.bType" class="form-group form-control rounded-border0 brd-input" required>
+											<option value="">*Please Select Job Type --</option>
+										</select>
+									<!--	<h1>job Type : {{selected.jType.mData}}</h1>-->
+										<span ng-show="submitted && selected.jType.mData==null" class="error">Please select job type</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="row" id="work_timescale_box" ng-hide="true" ng-show="selected.jType && selected.fuel_type">
+								<div class="col-md-12 col-xs-12 col-sm-12">
+									<div class="form-group">
+										<select tabindex="" ng-disabled="!selected.jType || !selected.fuel_type" name="work_timescale" id="work_timescale" ng-model="selected.work_timescale" ng-options="w.wScale for w in selected.fuel_type.tScale" class="form-group form-control rounded-border0 brd-input" 
+										ng-change="isUndefinedOrNull(selected.work_timescale)">
+										<option value="" selected>*Please Select Work Time Scale --</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 col-xs-12 col-sm-12">
+									<div class="form-group">
+										<textarea rows="3" name="description" id="description" placeholder="Description: Please provide as much information as possible" class="form-control rounded-border0" ng-model="selected.workDescription"></textarea>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div>&nbsp;</div>
+
+					<div class="border-bottom-gray2">&nbsp;</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-10">
+									<div class="right-side">
+										<h3>2. Tell us about yourself...</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div>&nbsp;</div>
+							<div class="row">
+								<div class="col-md-3 col-xs-12 col-sm-12">
+									<div class="form-group">
+										<select name="title" id="title" class="form-group form-control rounded-border0" tabindex="" ng-model="selected.usr_salutation">
+											<option value="" selected>*Title ---</option>	<!-- This line needs some work -->
+											<option value="Mr.">Mr</option>
+											<option value="Mrs.">Mrs</option>
+											<option value="Miss.">Miss</option>
+											<option value="Ms.">Ms</option>
+											<option value="Dr.">Dr</option>
+										</select>
+										<!-- <span ng-show="submitted && selected.fuel_type.fType==null" class="error">Please select a fuel type</span>			-->
+									</div>
+								</div>
+								<div class="col-md-4 col-xs-12 col-sm-12">
+									<div class="form-group">
+										<input type="text" name="first_name" ng-model="selected.user_fname" placeholder="First name" id="first_name" class="form-control rounded-border0">
+									</div>
+								</div>
+								<div class="col-md-5 col-xs-12 col-sm-12">
+									<div class="form-group">
+										<input type="text" name="last_name" ng-model="selected.user_lname" placeholder="Last name" id="last_name" class="form-control rounded-border0 ">
+									</div>
+								</div>
+							</div>
+
+							<div class="border-bottom-gray2">&nbsp;</div>
+							<div>&nbsp;</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+										<input type="email" ng-model="selected.inputemail" name="enng_email" id="email" placeholder="*Email Id" class="form-control rounded-border0" ng-pattern="EMAIL_REGEXP" ng-class="{errborder:submitted && ( engg_search.enng_email.$error.required || engg_search.enng_email.$error.pattern)}" required>
+																				
+										<span ng-show="submitted && engg_search.enng_email.$error.required" ng-hide="true" class="error">Please enter email id</span>
+										<span ng-show="submitted && engg_search.enng_email.$error.email" ng-hide="true" class="error">Please enter valid email id1</span>
+										<span ng-show="submitted && engg_search.enng_email.$error.pattern" ng-hide="true" class="error">Please enter valid email id</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+										<input type="text" ng-model="selected.phoneno" name="mphone" id="phone" placeholder="*Phone number" class="form-control rounded-border0" maxlength="10" ng-pattern="PHONE_EXP" ng-class="{errborder:submitted && (engg_search.mphone.$error.required || engg_search.mphone.$error.pattern)}" required/>
+										<span ng-show="submitted && engg_search.mphone.$error.required" ng-hide="true" class="error">Please enter valid phone number</span>
+										<span ng-show="submitted && engg_search.mphone.$error.pattern" ng-hide="true" class="error">Only 10 digit numbers</span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" name="time_to_call" ng-model="selected.call_time" id="time_to_call"  placeholder="Best time to call" class="form-control rounded-border0">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+										<input type="text" name="alternate_phone" ng-model="selected.alter_phno" id="alternate_phone" placeholder="Alternate phone" class="form-control rounded-border0" maxlength="10" ng-pattern="PHONE_EXP">
+										
+										<span ng-show="engg_search.alternate_phone.$error.pattern" ng-hide="true" class="error">Only 10 digit numbers</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>&nbsp;</div>
+					<div class="border-bottom-gray2">&nbsp;</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-10">
+									<div class="right-side">
+										<h3>3. Tell us about the property...</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div>&nbsp;</div>
+
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+										<input type="text" name="house_number" ng-model="selected.houseno" id="house_number" placeholder="*House number" class="form-control rounded-border0" ng-class="{errborder:submitted && engg_search.house_number.$error.required}" required>
+										<span ng-show="submitted && engg_search.house_number.$error.required" ng-hide="true" class="error">Please enter House no or name</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
+									<div class="form-group">
+										<input type="text" name="postal_code" ng-model="selected.postalcode" id="postal_code" placeholder="*Postal code" class="form-control rounded-border0" style="text-transform: uppercase;" maxlength="6" ng-class="{errborder:submitted && engg_search.postal_code.$error.required}" required>
+										<span ng-show="submitted && engg_search.postal_code.$error.required" ng-hide="true" class="error">Please enter postal code</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-xs-12 col-sm-6">
+									<div class="form-group">
+										<select tabindex="" name="property_type" ng-model="selected.propertyType" id="property_type" class="form-group form-control rounded-border0">
+											<option value="" selected="selected" >Please Select Property Type ---</option>
+											<option value="House">House </option>
+											<option value="Bungalow">Bungalow </option>
+											<option value="Flat/Apartment">Flat/Apartment </option>
+											<option value="Commercial">Commercial </option>
+											<option value="New Build">New Build </option>
+										</select>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-xs-12 col-sm-6">
+									<div class="form-group">
+										<select tabindex="" name="property_owner" ng-model="selected.propertyOwner" id="property_owner" class="form-group form-control rounded-border0">
+											<option selected="selected" value="">--Please Select--</option>
+											<option value="Home Owner">Home Owner </option>
+											<option value="Tenant">Tenant </option>
+											<option value="Potential Homebuyer">Potential Homebuyer </option>
+											<option value="Manager / Agent">Manager / Agent </option>
+											<option value="Landlord ie Rental Property">Landlord ie Rental Property </option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-xs-12 col-sm-12">
+									<div class="form-group">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" name="subscribe" id="subscribe" value="1" ng-model="selected.subscribefor">
+												<p class="font-size11">Keep me upto date with MyBoiler latest news, products and services.</p>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="border-bottom-gray2">&nbsp;</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-10">
+									<div class="right-side">
+										<h3>4. Request your quote:</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-6 col-xs-12 col-sm-4">
+									<button class="btn btn-primary width180" type="submit" ng-click="submitted=true">Request your quote<i class="icon-next"> &nbsp;&nbsp; <img alt="" src="./img/right-arrow.png"></i></button>
+								</div>
+								<div class="col-md-6 col-xs-12 col-sm-4">
+									<button class="btn width180" type="reset" ng-click="reset()">Reset<i class="icon-next"> &nbsp;&nbsp; <img alt="" src="./img/right-arrow.png"></i></button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<h5><b>Important:</b></h5>
+									<p class="font-size11">In order to receive accurate prices and quotes, engineers must inspect the project site. These surveys are free and will provide you with an opportunity to assess the professionalism of the quoting company.</p>
+									<p class="font-size11">Your personal information is held in strict confidence and in compliance with The Data Protection Act. It will only be used to allow our approved installers to set up appointments with you and for MyBoiler to keep you informed of latest information and products.</p>
+									<p>* Required field(s)</p>
+								</div>
+							</div>
+							<div>&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div>&nbsp;</div>
+			</form>
+			<!----  Find an engineer End    ---->
+		</div>
+	</div>
+</div>

@@ -1,0 +1,59 @@
+<link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+	<div id="manuals">
+		<div class="hidden-phone">
+			<div class="bg-gray">
+				<div class="container">
+					<div class="height22">
+						
+					</div>
+					<div id="services">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-heading2">
+			<h2>MANUALS</h2>
+		</div>
+
+		<div class="">
+			<div class="container paddall">
+				<div class="row">
+					<div class="height22"></div>
+					<div class="col-md-2"></div>
+					<div class="col-md-8 text-center heading2">Search for Boiler manuals, user guides and other documents for your Boiler</div>
+					<div class="col-md-2"></div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-gray">
+			<div class="container paddall " >
+				<div>&nbsp;</div>
+			<!-- refactor tables into 																div-->
+				<div ng-repeat = "b in brands"  style="height:60px;"> 
+					<div style="height:5px;background:#ebebeb;"></div>
+						<a href="#/cmanuals/brands/{{b.BrandName}}/">
+						<!-- <a href="https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers%2F{{doc.BrandName}}/"> -->
+							<div class="resultpaddall boilername" class="col-md-12 col-xs-12 col-sm-12">
+								<!--url was here -->
+								<div class="col-md-1 col-xs-1 col-sm-1">
+										<img src="./img/file-icons/_folder.gif">
+								</div>
+								<div class="col-md-8 col-xs-3 col-sm-3">
+									<div class="font-size18">{{b.BrandName}}</div>
+								</div>
+								<div class="col-md-1 col-xs-1 col-sm-2 pull-right">
+									<img alt="" src="https://myboiler.com/v2/front/img/arrow.png"  height="40">
+								</div>
+								<!-- a was here -->
+							</div>
+						</a>						
+						<div style="height:5px;background:#ebebeb;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

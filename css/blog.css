@@ -1,0 +1,19 @@
+
+/*used for blogs display */
+.blog-bg{background:#f5f5f5; border-bottom:2px solid #d4d3d3; border-top:2px solid #d4d3d3; overflow:hidden}
+.blog-bg-top{border-top:2px solid #d4d3d3;}
+
+paddall1{padding:14px}
+
+
+ul.listing1{padding-left:10px; clear:both;}
+ul.listing1 li{list-style: none; border: 1px solid #ddd; padding: 10px;font-weight: bold}
+ul.listing1 li a{font-weight:100;}
+ul.listing1 li ul{padding-left: 10px}
+ul.listing1 li ul li{border: none}
+
+.margintop0{margin-top:0px;}
+
+.article{cursor: pointer;}
+
+/*.article:hover{background: #f9f9f9; }*/
