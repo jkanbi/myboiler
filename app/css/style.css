@@ -1,4 +1,4 @@
-@media (min-width:1024px) {#pcontainer{max-width:1280px;padding:auto; margin:auto; text-align:left; background-color:#FFFFFF; box-shadow: -10px 0 20px -5px #DCDCDC, 10px 0 20px -5px #DCDCDC;} .container {width:940px;}}
+@media (min-width:1024px) {#pcontainer{max-width:1280px;padding:auto; margin:auto; text-align:left; background-color:#FFFFFF; box-shadow: -10px 0 20px -5px #DCDCDC, 10px 0 20px -5px #DCDCDC;}  .container {/* width:940px; */}} 
 
 body { margin-top:0px; font-family:lato; color:#343433; background-color: #fafafa }
 a {color: #34519C }
