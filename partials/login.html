@@ -15,16 +15,10 @@
 						<form class="form-horizontal" name= "authenticate" ng-submit ="login()" role="form" id="join_us" method="post" novalidate="novalidate">
 							<input type="hidden" name="page_type" value="Consumer">
 							<div class="form-group">
-								<label for="email" class="col-sm-2 control-label">Email</label>
+								<!--<label for="email" class="col-sm-2 control-label">Email</label> -->
 								<div class="col-sm-10">
-									<input type="email" ng-model = "user.email" name="email" id="email" class="form-control" placeholder="Email address">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label for="password" class="col-sm-2 control-label">Password</label>
-								<div class="col-sm-10">
-									<input type="password" ng-model ="user.password" name="password" id="password" class="form-control" placeholder="Password">
+									<input type="email" ng-model = "user.email" name="email" id="email" class="form-control" placeholder="Email address"><br/>
+									<input type="password" ng-model ="user.password" name="password" id="password" class="form-control" placeholder="Password"><br/>
 								</div>
 							</div>
 
@@ -32,11 +26,6 @@
 								<div class="col-sm-offset-2 col-sm-10">
 									<button type="submit" value ="Log In" class="btn btn-primary">Sign in</button> &nbsp;
 									<button type="reset" class="btn btn-default">Clear</button>
-								</div>
-								<div>&nbsp;</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
 									<button type="submit" class="btn btn-default" >Register</button> &nbsp;<!--onClick="parent.location='#/register'" -->
 
 								</div>
