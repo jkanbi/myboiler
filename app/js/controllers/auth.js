@@ -30,4 +30,21 @@ myBoilerApp.controller('AuthCtrl',
         console.log(error.toString());
       });
     };
+
+    $scope.facebooklogin = function () {
+      Auth.flogin().then(function () {
+        $location.path('/');
+      }, function (error) {
+        $scope.error = error.toString();
+      });
+    };
+
+    $scope.googlelogin = function () {
+      Auth.glogin().then(function () {
+        $location.path('/');
+      }, function (error) {
+        $scope.error = error.toString();
+      });
+    };
+
   });

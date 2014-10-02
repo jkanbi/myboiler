@@ -17,6 +17,12 @@ myBoilerApp.factory('Auth',
       login: function (user) {
         return auth.$login('password', user);
       },
+      flogin:function () {
+        return auth.$login('facebook',{scope:'email,user_likes'});
+      },
+      glogin:function () {
+        return auth.$login('google',{scope:'https://www.googleapis.com/auth/plus.login'});
+      },
       logout: function () {
         auth.$logout();
       }
