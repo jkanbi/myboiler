@@ -32,13 +32,6 @@ myBoilerApp.factory('User',function($firebase,$rootScope, FIREBASE_URL, Auth ){
 		signedIn: function () {			//Worked out from live code
   			return $rootScope.currentUser !== undefined;
 		},
-		posts:function (username){
-			return $firebase(new Firebase(FIREBASE_URL + 'user_posts/' + username));
-		},
-		comments:function(username){
-			return $firebase(new Firebase(FIREBASE_URL + 'user_comments/' + username));
-		},
-
 	};
 
 
