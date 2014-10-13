@@ -1,7 +1,7 @@
 	/* App Module */
 	
-//Wrapping your javascript in a closure is a good habit! From CodeSchool.
-(function () {
+//Wrapping your javascript in a closure is a good habit! From CodeSchool.   *Not working for some reason.
+//(function () {
 
 
 	var rootdir = "partials/";
@@ -109,7 +109,7 @@
 		  } */
   }]);
   
-})();
+//})();
 
 
 
