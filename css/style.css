@@ -6,6 +6,7 @@ a:hover,a:focus{outline:none; text-decoration:none}
 .ovfl{overflow:hidden}
 .algn-center{text-align:center}
 .btn:hover, .btn:focus{color:ffffff}
+.navbar{margin-bottom:0px;}
 .navbar-container{padding-left:0px; padding-right: 0px}
 .paddingleft15{padding-left: 15px !important} .padding-right30{padding-right:30px !important}
 .space00{padding-top:70px;}
