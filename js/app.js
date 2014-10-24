@@ -101,6 +101,14 @@
 			templateUrl: rootdir+'login.html',
 			controller: 'AuthCtrl'
 		  })
+		  .when('/account', {
+			templateUrl: rootdir+'account.html',
+			controller: 'accountCtrl'
+		  })
+		  .when('/nest-thermostat',{
+		  	templateUrl: rootdir + 'nest_thermostat_TPL.html',
+		  	//controller: 'nestThermostatCtrl'
+		  })
 		  .otherwise ({ redirectTo: '/index.html' });
 		  
 		 /*  if(window.history && window.history.pushState)
