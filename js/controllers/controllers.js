@@ -1,60 +1,12 @@
 /* Controllers */
 
+//Wrapping your javascript in a closure is a good habit! From CodeSchool.
 (function () {
 
 // create controller name
 
 //will display main content of index page
 	myBoilerApp.controller('mainContentCtrl',function($scope){});
-
-	myBoilerApp.controller('headCtrl',function($scope, $location)
-	{	
-		$scope.displayMenus = function()
-		{
-			$scope.menu1="FIND AN ENGINEER";
-			$scope.menu2="SERVICES";
-			$scope.menu3="MANUALS";
-			$scope.menu4="USEFUL TIPS";
-			$scope.menu5="BLOG";
-			$scope.menu6="SERVICES";
-		}
-
-		$scope.showCMenus = function()
-		{
-			$scope.displayMenus();
-			$("#menu1").attr("href","#/consumer-engineer-search");  //Added to stop engineer tools link showing up instead bug.
-			$("#menu2").attr("href","href","#/consumer-services");
-			//$("#menu3").attr("href","https://myboiler.com/v2/manuals/index.php?ut=consumer&d=Boilers");
-			$("#menu3").attr("href","#/cmanuals");
-			$("#menu4").attr("href","#/consumer-tips");
-			$("#menu5").show();
-			$("#menu5").attr("href","#/cblog");
-			$("#menu6").attr("href","#/consumer-services");
-			$("#cbtn").hide();
-			$("#ebtn").show();
-		}
-			
-		$scope.showMenus = function()	
-		{
-			$scope.menu1 = "TOOLS";
-			$scope.menu2 = "MANUALS";
-			$scope.menu3 = "USEFUL TIPS";
-			$scope.menu4 = "BLOG";
-			$scope.menu5 = "";
-			$scope.menu6 = "TOOLS";
-			
-			$("#menu1").attr("href","#/engineer-tools");  //Added to stop consumer-engineer-form link showing up instead bug.
-			$("#menu2").attr("href","https://myboiler.com/v2/manuals/index.php?ut=engineer&d=Boilers");
-			$("#menu3").attr("href","#/engineer-tips");
-			$("#menu4").attr("href","#/eblog");
-			$("#menu5").hide();
-			$("#menu6").attr("href","#/engineer-tools");
-			$("#cbtn").show();
-			$("#ebtn").hide();
-		}
-		
-		
-	});
 
 	myBoilerApp.controller('blogCtrl',['$scope', function($scope)
 	{
