@@ -20,7 +20,8 @@
 					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu2"><a id="menu2" href="#/consumer-services">{{menu2}}</a></li>
 					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu3"><a id="menu3" href="#/cmanuals">{{menu3}}</a></li>
 					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu4"><a id="menu4" href="#/consumer-tips">{{menu4}}</a></li>
-					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu5"><a id="menu5" href="#/cblog">{{menu5}}</a></li>
+					<!--<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu5"><a id="menu5" href="#/cblog">{{menu5}}</a></li> -->
+					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu6"><a id="menu6" href="#/account" ng-show="signedIn()">{{menu6}}</a></li>
 				</ul>
 				<ul class="nav navbar-nav pull-right mrgntp10 mrgnbt14">
 					<div class="pull-left mrgntp5" id="ebtn">
@@ -39,8 +40,8 @@
 							<button type="button" class="btn search">REGISTER<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button>
 						</a>
 					</div> -->
-					<div class="pull-left mrgntp5" id="login" ng-hide="signedIn()"><a href="#/login"><button type="button" class="btn search">LOGIN<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button></a></div>
-					<div class="pull-left mrgntp5" ng-show="signedIn()"><a href="#/users/{{ currentUser.username }}">
+					<div class="pull-left mrgntp5 paddlt7" id="login" ng-hide="signedIn()"><a href="#/login"><button type="button" class="btn search">LOGIN<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button></a></div>
+					<div class="pull-left mrgntp5 paddlt7" ng-show="signedIn()"><a href="#/users/{{ currentUser.username }}">
         				<!-- <img ng-src="http://www.gravatar.com/avatar/{{ currentUser.md5_hash }}" class="nav-pic" /> -->
         				{{ currentUser.username }}</a><button class="btn search" ng-click="logout()">Logout</button>
       				</div>
