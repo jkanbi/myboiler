@@ -14,26 +14,21 @@
 			</div>
 			
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div ng-controller="NavCtrl" id="logo" class="collapse navbar-collapse" ng-init="displayMenus()">
+			<div ng-controller="NavCtrl" id="logo" class="collapse navbar-collapse"> <!--ng-init="displayMenus()" -->
 				<ul class="nav navbar-nav pull-left mrgntp10 mrgnbt14">
-					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu1"><a id="menu1" href="#/consumer-engineer-search">{{menu1}}</a></li>
-					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu2"><a id="menu2" href="#/consumer-services">{{menu2}}</a></li>
-					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu3"><a id="menu3" href="#/cmanuals">{{menu3}}</a></li>
-					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu4"><a id="menu4" href="#/consumer-tips">{{menu4}}</a></li>
-					<!--<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu5"><a id="menu5" href="#/cblog">{{menu5}}</a></li> -->
-					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu6"><a id="menu6" href="#/account" ng-show="signedIn()">{{menu6}}</a></li>
+					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu1"><a id="menu1" href="#/consumer-engineer-search">FIND ENGINEER</a></li>
+					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu2"><a id="menu2" href="#/consumer-services">SERVICES</a></li>
+					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu3"><a id="menu3" href="#/cmanuals">MANUALS</a></li>
+					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu4"><a id="menu4" href="#/consumer-tips">TOP TIPS</a></li>
+					<li class="" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu5"><a id="menu5" href="#/boiler" ng-show="signedIn()">MY BOILER</a></li>
 				</ul>
 				<ul class="nav navbar-nav pull-right mrgntp10 mrgnbt14">
 					<div class="pull-left mrgntp5" id="ebtn">
 						<a href="#/engineer">
-							<button type="button" class="btn btn-primary-custom" ng-click="showMenus(); engclicked=true;">ENGINEER SITE<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button>
+							<button type="button" class="btn btn-primary-custom">ENGINEER SITE<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button><!--ng-click="showMenus(); engclicked=true;"-->
 						</a>
 					</div>
-					<div class="pull-left mrgntp5" id="cbtn">
-						<a href="#/consumer">
-							<button type="button" class="btn btn-primary-custom" ng-click="showCMenus(); conclicked=true;">CONSUMER SITE<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button>
-						</a>
-					</div>
+
 					<!--
 					<div class="pull-left mrgntp5" id="register" ng-hide="signedIn()">
 						<a href="#/register" sl-processed="1">

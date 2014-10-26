@@ -6,7 +6,17 @@
 // create controller name
 
 //will display main content of index page
-	myBoilerApp.controller('mainContentCtrl',function($scope){});
+	myBoilerApp.controller('mainContentCtrl',function($scope,myPageCtx){
+		$scope.title = 'Consumer Home - MyBoiler.com'
+		$scope.pageCtx = myPageCtx;
+	});
+
+	myBoilerApp.controller('engineerCtrl',function($scope,myPageCtx){
+		var erootdir = 'partials/engineer/'
+		myPageCtx.title = 'Engineer Home - MyBoiler.com';
+		myPageCtx.headerUrl = erootdir + 'header.html';
+  		myPageCtx.footerUrl = erootdir + 'footer.html';
+	});
 
 	myBoilerApp.controller('blogCtrl',['$scope', function($scope)
 	{

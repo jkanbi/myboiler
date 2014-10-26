@@ -32,7 +32,8 @@
 	        templateUrl: crootdir +'manuals.html',
 	        controller: 'manualsCtrl'
 	      }).when('/emanuals', {
-	        templateUrl: rootdir+'manuals.html'
+	        templateUrl: rootdir+'manuals.html',
+			controller : 'engineerCtrl'
 	      })
 		  .when('/cmanuals/brands/:brandId', {
 	        templateUrl: crootdir+'documents.html',
@@ -57,7 +58,8 @@
 			templateUrl : crootdir+'blog.html'
 		  })
 		  .when('/eblog', {
-			templateUrl : erootdir+'blog.html'
+			templateUrl : erootdir+'blog.html',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/consumer-services', {
 			templateUrl : crootdir+'consumer_services.html'
@@ -66,32 +68,39 @@
 			templateUrl : rootdir+'copyright.html'
 		  })
 		  .when('/ecopyright', {
-			templateUrl : rootdir+'copyright.html'
+			templateUrl : rootdir+'copyright.html',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/cprivacy', {
 			templateUrl : rootdir+'privacypolicy.html'
 		  })
 		  .when('/eprivacy', {
-			templateUrl : rootdir+'privacypolicy.html'
+			templateUrl : rootdir+'privacypolicy.html',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/cterms', {
 			templateUrl : rootdir+'termsnconditions.html'
 		  })
 		  .when('/eterms' , {
-			templateUrl : rootdir + 'termsnconditions.html'
+			templateUrl : rootdir + 'termsnconditions.html',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/engineer',{
-			templateUrl : erootdir+'engineer_main_content.html'
+			templateUrl : erootdir+'engineer_main_content.html',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/engineer-tips', {
-			templateUrl : erootdir+'tooltips.html'
+			templateUrl : erootdir+'tooltips.html',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/engineer-tools', {
-			templateUrl : erootdir+'engineertools.html'
+			templateUrl : erootdir+'engineertools.html',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/engineer-contact', {
 			templateUrl: crootdir+'consumercontact.html',
-			controller: 'consumerContactController'
+			controller : 'consumerContactController',
+			controller : 'engineerCtrl'
 		  })
 		  .when('/register', {
 			templateUrl: rootdir+'register.html',
