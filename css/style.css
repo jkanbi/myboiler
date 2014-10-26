@@ -74,6 +74,7 @@ a:hover,a:focus{outline:none; text-decoration:none}
 .navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;padding: 4px 5px;}
 .navbar-nav > li.span { float:right; text-align:center; }
 
+
 .ng-invalid.ng-dirty {
 border-color: #FA787E;
 }
@@ -174,7 +175,7 @@ ul.footer-link li a:hover{text-decoration:underline}
 	body{margin-top:0px;}
 	.navbar-fixed-top{position: absolute !important; }
 */
-
+.usericon{text-align: center; width:100%;}
 .navbar-nav > li > a{color:#ffffff; text-align:center; border-bottom:2px solid #2f2c57; margin-top: 0px;}
 .navbar-nav{float:left !important; width:100%; margin-right:0px; background:#33305e}
 .nav > li > a:hover, .nav > li > a.active, .nav > li > a:focus{color:#ffffff; background:#201f3c; text-decoration:none;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px}
@@ -206,6 +207,7 @@ ul.dropdownWidth li a{ width: 100% !important;}
 
 
   @media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+  .usericon{text-align: center; width:100%;}
 .navbar-brand{padding-left: 15px !important;}
 .font-size18 {font-size: 13px;}
 .tablearrow{ margin-top: 20px !important;}
@@ -219,6 +221,7 @@ ul.dropdownWidth li a{ width: 100% !important;}
 
 
 @media only screen and (max-width:767px), only screen and (max-device-width:767px) {
+	.usericon{text-align: center; width:100%;}
 .paddlt-rt0{padding-left:0px; padding-right:0px}.heading4 {padding-top:40px;}.margintop10{margin-top:10px}
 .navbar-nav > li > a{color:#ffffff; text-align:center; border-bottom:2px solid #2f2c57; margin-top: 0px;}
 .navbar-nav{float:left !important; width:100%; margin-right:0px; background:#33305e}
