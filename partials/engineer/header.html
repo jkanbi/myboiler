@@ -45,6 +45,13 @@
         				<!-- <img ng-src="http://www.gravatar.com/avatar/{{ currentUser.md5_hash }}" class="nav-pic" /> -->
         				{{ currentUser.username }}</a><button class="btn search" ng-click="logout()">Logout</button>
       				</div>
+      				<div class="pull-left mrgntp5 paddlt7" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu6">
+      					<a id="menu6" href="#/account" ng-show="signedIn()">
+      						<div class="usericon">
+      							<img src="./img/usericon.jpg" height="40px" width="40px" ;>
+      						</div>
+      					</a>
+      				</div>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div>

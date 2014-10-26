@@ -42,8 +42,14 @@
 					</div> -->
 					<div class="pull-left mrgntp5 paddlt7" id="login" ng-hide="signedIn()"><a href="#/login"><button type="button" class="btn search">LOGIN<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button></a></div>
 					<div class="pull-left mrgntp5 paddlt7" ng-show="signedIn()"><a href="#/users/{{ currentUser.username }}">
-        				<!-- <img ng-src="http://www.gravatar.com/avatar/{{ currentUser.md5_hash }}" class="nav-pic" /> -->
         				{{ currentUser.username }}</a><button class="btn search" ng-click="logout()">Logout</button>
+      				</div>
+      				<div class="pull-left mrgntp5 paddlt7" data-target=".navbar-collapse" data-toggle="collapse" ng-model="menu6">
+      					<a id="menu6" href="#/account" ng-show="signedIn()">
+      						<div class="usericon">
+      							<img src="./img/usericon.jpg" height="40px" width="40px" ;>
+      						</div>
+      					</a>
       				</div>
 				</ul>
 			</div><!-- /.navbar-collapse -->

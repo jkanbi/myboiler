@@ -6,7 +6,7 @@
 
 	//Add new pages to the following arrays.
 	//If pages aren't added to the following arrays, then header and footer are not displayed.
-	var clinks = new Array('','/','/index.html','/consumer','/consumer-services','/cmanuals','/cblog','/consumer-engineer-search','/consumer-contact','/cterms','/cprivacy','/consumer-tips','/nest-thermostat','/login','/register');
+	var clinks = new Array('','/','/index.html','/consumer','/consumer-services','/cmanuals','/cblog','/consumer-engineer-search','/consumer-contact','/cterms','/cprivacy','/consumer-tips','/nest-thermostat','/login','/register','/account');
 	var elinks = new Array('/engineer','/engineer-tips','/emanuals','/eblog','/engineer-tools','/engineer-contact','/eterms','/eprivacy','/ecopyright','/login','/register');
 
 	myBoilerApp.directive("ngHeader", function($location)
