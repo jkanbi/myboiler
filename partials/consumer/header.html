@@ -35,7 +35,9 @@
 							<button type="button" class="btn search">REGISTER<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button>
 						</a>
 					</div> -->
+					<!--
 					<div class="pull-left mrgntp5 paddlt7" id="login" ng-hide="signedIn()"><a href="#/login"><button type="button" class="btn search">LOGIN<i class="icon-next">&nbsp; <img src="./img/right-arrow.png" alt=""></i></button></a></div>
+					-->
 					<div class="pull-left mrgntp5 paddlt7" ng-show="signedIn()"><a href="#/users/{{ currentUser.username }}">
         				{{ currentUser.username }}</a><button class="btn search" ng-click="logout()">Logout</button>
       				</div>
