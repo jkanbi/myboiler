@@ -118,6 +118,11 @@
 		  	templateUrl: rootdir + 'nest_thermostat_TPL.html',
 		  	//controller: 'nestThermostatCtrl'
 		  })
+		  .when('/nest-pro',{
+		  	templateUrl: erootdir + 'nest-pro-tpl.html',
+		  	controller : 'engineerCtrl'
+		  	//controller: 'nestThermostatCtrl'
+		  })
 		  .otherwise ({ redirectTo: '/index.html' });
 		  
 		 /*  if(window.history && window.history.pushState)
