@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en" ng-app="myBoiler">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,14 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
 		<meta name="description" content="MyBoiler">
 		<meta name="author" content="">
-		
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
 		<link href="./vendor/bootstrap320/css/bootstrap.css" rel="stylesheet">
 		<link href="./vendor/bower_components/bootstrap/dist/css/lato_fonts.css" rel="stylesheet">
 		<link href="./vendor/bower_components/bootstrap/dist/css/font-awesome.min.css" rel="stylesheet">
-		<link href="./styles/style.css" rel="stylesheet">
+
+		<!-- build:css({.tmp,app}) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+
 		<!--  Front site cookie move  -->
 		<link href="https://myboiler.com/v2/front/css/cookiecuttr.css" rel="stylesheet">
 		<!-- Front site cookie move  -->
+		
+		<!-- build:js scripts/modernizr.js -->
+		<script src="./vendor/bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
 
 		<title>Home</title>	
 	</head>
@@ -35,11 +43,8 @@
 		<script type="text/javascript" src="./scripts/custom/jquery.cookiecuttr.js"></script>
 		<!-- END Front site cookie move  END-->		
 		<script src="https://code.angularjs.org/1.2.23/angular.js"></script>
-		<!-- <script src="./bower_components/angular/angular.js"></script> -->
 		<script src="https://code.angularjs.org/1.2.23/angular-route.js"></script>
-		<!--<script src="./bower_components/angular-route/angular-route.js"></script> -->
 		<script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
-		<!--<script src="./js/firebase.js"></script> -->
 		<script src="https://cdn.firebase.com/js/simple-login/1.6.3/firebase-simple-login.js"></script>
 		<script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
 		
@@ -56,18 +61,13 @@
 		<script src="./scripts/services/services.js"></script>
 		<script src="./scripts/services/user.js"></script>
 		<script src="./scripts/services/myPageCtx.js"></script>
+
 		<script src="./scripts/directives/directives.js"></script>
+
 		<script src="./scripts/custom/analyticsv3.js"></script>
-		
-		<!-- <base href="/front/app/"></base> -->
-		<!--<script src="https://raw.githubusercontent.com/angular-ui/angular-google-maps/1.2.1/dist/angular-google-maps.min.js"></script> -->
-		<!--<base href="/">-->
+		<script type = "text/javascript" src="./scripts/custom/cookiescript.js"></script>
+		<script type = "text/javascript" src="./scripts/custom/emailValidate.js"></script>
 		<script type="text/javascript" src="//s.skimresources.com/js/63104X1426421.skimlinks.js"></script>
 	</body>
 </html>
 
-<script type = "text/javascript" src="./scripts/custom/cookiescript.js">
-</script>
-
-<script type = "text/javascript" src="./scripts/custom/emailValidate.js">
-</script>
