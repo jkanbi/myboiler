@@ -1,5 +1,5 @@
 myBoilerApp.provider('myPageCtx', function() {
-	var crootdir = 'partials/consumer/'	
+	var crootdir = 'views/consumer/'	
 
   var defaultCtx = {
     title: 'Default Title',

@@ -4,9 +4,9 @@
 //(function () {
 
 
-	var rootdir = "partials/";
-	var crootdir = "partials/consumer/";
-	var erootdir = "partials/engineer/";
+	var rootdir = "views/";
+	var crootdir = "views/consumer/";
+	var erootdir = "views/engineer/";
 
 	//http://stackoverflow.com/questions/24227239/unknown-provider-firebaseprovider-firebase
 	var myBoilerApp = angular.module('myBoiler',['ngRoute', 'firebase']);
