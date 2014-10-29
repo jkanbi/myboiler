@@ -12,7 +12,7 @@
 	});
 
 	myBoilerApp.controller('engineerCtrl',function($scope,myPageCtx){
-		var erootdir = 'partials/engineer/'
+		var erootdir = 'views/engineer/'
 		myPageCtx.title = 'Engineer Home - MyBoiler.com';
 		myPageCtx.headerUrl = erootdir + 'header.html';
   		myPageCtx.footerUrl = erootdir + 'footer.html';
