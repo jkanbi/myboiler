@@ -8,8 +8,8 @@ myBoilerApp.factory('Auth',
     var Auth = {
       register: function (user) {
         return ref.createUser({
-          email: user.email, 
-          password: user.password
+          "email": user.email, 
+          "password": user.password
         }, function(err) {
             if (err) {
               switch (err.code) {
@@ -17,12 +17,12 @@ myBoilerApp.factory('Auth',
                   // The new user account cannot be created because the email is already in use.
                 case 'INVALID_EMAIL':
                   // The specified email is not a valid email.
-                case default:
+                //case default:
               }
             } else {
               // User account created successfully!
             }
-        });
+        })
       },
       signedIn: function () {
         //Synchronous Authentication Check
@@ -30,15 +30,15 @@ myBoilerApp.factory('Auth',
       },
       login: function (user) {
         return ref.authWithPassword({
-          "email": user.email
+          "email": user.email,
           "password" : user.password
         },function(err,authData){
-            if (error) {
+            if (err) {
               console.log('Login Failed!', error);
             } else {
             console.log('Authenticated successfully with payload:', authData);
             }
-        });
+        })
       },
       flogin:function () {
         //OLD return ref.$login('facebook',{scope:'email,user_likes'});
@@ -48,12 +48,14 @@ myBoilerApp.factory('Auth',
               if (err.code === "TRANSPORT_UNAVAILABLE") {
                 // fall-back to browser redirects, and pick up the session
                 // automatically when we come back to the origin page
-                ref.authWithOAuthRedirect("facebook", function(err, authData) { ... });
+                ref.authWithOAuthRedirect("facebook", function(err, authData) {
+                //
+                });
               }
             } else if (authData) {
               // user authenticated with Firebase
             }
-          });
+          })
       },
       glogin:function () {
         //OLD return ref.$login('google',{scope:'https://www.googleapis.com/auth/plus.login'});
@@ -63,12 +65,14 @@ myBoilerApp.factory('Auth',
               if (err.code === "TRANSPORT_UNAVAILABLE") {
                 // fall-back to browser redirects, and pick up the session
                 // automatically when we come back to the origin page
-                ref.authWithOAuthRedirect("google", function(err, authData) { ... });
+                ref.authWithOAuthRedirect("google", function(err, authData) {
+                  //
+                });
               }
             } else if (authData) {
               // user authenticated with Firebase
             }
-          });
+          })
       },
       logout: function () {
         ref.unauth();
