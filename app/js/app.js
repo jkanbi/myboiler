@@ -114,8 +114,12 @@
 			templateUrl: rootdir+'account.html',
 			controller: 'accountCtrl'
 		  })
+		  .when('/nest',{
+		  	templateUrl: crootdir + 'nest-tpl.html',
+		  	//controller: 'nestThermostatCtrl'
+		  })
 		  .when('/nest-thermostat',{
-		  	templateUrl: rootdir + 'nest_thermostat_TPL.html',
+		  	templateUrl: crootdir + 'nest-thermostat-tpl.html',
 		  	//controller: 'nestThermostatCtrl'
 		  })
 		  .when('/nest-pro',{
