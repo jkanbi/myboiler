@@ -35,7 +35,7 @@ gulp.task('views', function () {
       quotes: true
     }))
     .pipe($.ngHtml2js({
-      moduleName: 'myBoilerApp',
+      moduleName: 'myBoiler',
       prefix: 'views/'
     }))
     .pipe(gulp.dest('.tmp/views'))
