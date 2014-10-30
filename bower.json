@@ -12,7 +12,8 @@
     "firebase": "1.1.1",
     "firebase-simple-login": "1.6.3",
     "angularfire": "0.8.2",
-    "angular-fontawesome": "~0.3.0"
+    "angular-fontawesome": "~0.3.0",
+    "cookieCuttr": "*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.x"
