@@ -258,8 +258,9 @@ window.catalog_type = 'default';
   window.Nest = window.Nest || {};
   window.Nest.FEATURE_FLAGS = {"giftWrap":true}
 </script>
-
-<div ng-include="header.html"></div>
+<div ng-controller="headCtrl">
+  <div ng-include="pageCtx.headerUrl"></div>
+</div>
     <div id="main">
       
 
