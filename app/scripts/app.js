@@ -28,8 +28,8 @@
 			templateUrl: crootdir +'consumer_main_content.html',
 			controller: 'mainContentCtrl'
 		  })
-		  .when('/cmanuals', {
-	        templateUrl: crootdir +'manuals.html',
+		  .when('/manuals', {
+	        templateUrl: rootdir +'manuals.html',
 	        controller: 'manualsCtrl'
 	      }).when('/emanuals', {
 	        templateUrl: rootdir+'manuals.html',
