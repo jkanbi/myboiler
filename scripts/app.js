@@ -35,8 +35,8 @@
 	        templateUrl: rootdir+'manuals.html',
 			controller : 'engineerCtrl'
 	      })
-		  .when('/cmanuals/brands/:brandId', {
-	        templateUrl: crootdir+'documents.html',
+		  .when('/manuals/brands/:brandId', {
+	        templateUrl: rootdir+'documents.html',
 	        controller:'documentsCtrl',
 	      })
 		  .when('/consumer-engineer-search', {
