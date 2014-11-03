@@ -1,7 +1,7 @@
 (function () {
 
-	myBoilerApp.controller('manualsCtrl',['$scope','$firebase',function($scope,$firebase) {
-			var ref =  new Firebase("https://myboiler.firebaseio.com/brands");
+	myBoilerApp.controller('manualsCtrl',['$scope','$firebase','FIREBASE_URL',function($scope,$firebase,FIREBASE_URL) {
+			var ref =  new Firebase(FIREBASE_URL + "/brands");
 			var sync = $firebase(ref);
 			var syncobject = sync.$asObject();
 			$scope.brands = syncobject;
