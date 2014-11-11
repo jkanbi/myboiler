@@ -135,6 +135,8 @@
 		  } */
   }]);
 
+	// The following code allows google analytics to track single page views
+	// Stack Overflow Permalink: http://stackoverflow.com/questions/10713708/tracking-google-analytics-page-views-with-angular-js/25290857#25290857
 	myBoilerApp.run(['$rootScope', '$location', '$window',
     function($rootScope, $location, $window) {
       $rootScope.$on('$routeChangeSuccess',
