@@ -10,14 +10,13 @@ myBoilerApp.factory('User',function($firebase,$rootScope, FIREBASE_URL, Auth ){
 	var users = $firebase(ref);
 
 	var User = {
-		create:function (authUser,username,email){
-			var user = $firebase(ref.child(username)).$asObject();
+		create:function (authData,username,email){
+			var user = $firebase(ref.child(authData.uid)).$asObject();
 
 			return user.$loaded(function(){
-				user.username = username;
-				user.email = email;
-				user.md5_hash = authUser.md5_hash;
-				user.$priority = authUser.uid;
+				user.$set(authData);
+				user.authData.uid.md5_hash.$set(authData.md5_hash);
+				user.$priority = authData.uid;
 				user.$save();
 			});
 		},
@@ -36,8 +35,8 @@ myBoilerApp.factory('User',function($firebase,$rootScope, FIREBASE_URL, Auth ){
 
 
 
-	return $rootScope.$on('$firebaseSimpleLogin:login', function (e, authUser) {
-				var query = $firebase(ref.startAt(authUser.uid).endAt(authUser.uid)).$asArray();   //worked out from live example tutorial not clear. Accessing the current user throughout the app
+	return $rootScope.$on('$firebaseSimpleLogin:login', function (e, authData) {
+				var query = $firebase(ref.startAt(authData.uid).endAt(authData.uid)).$asArray();   //worked out from live example tutorial not clear. Accessing the current user throughout the app
   				query.$loaded(function () {
   					console.log(query[0]);
     				setCurrentUser(query[0].username);

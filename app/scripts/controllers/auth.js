@@ -6,7 +6,7 @@ myBoilerApp.controller('AuthCtrl',
       $location.path('/');
     }
 
-    $scope.$on('$firebaseSimpleLogin:login', function () {
+    $scope.$onAuth(function () {
       $location.path('/');
     });
 

@@ -7,7 +7,12 @@ myBoilerApp.factory('Auth',
 
     var Auth = {
       register: function (user) {
-        return ref.$createUser({"email" : user.email, "password": user.password});
+        return ref.$createUser({"email" : user.email, "password": user.password}, function(error) {
+          if (error === null) {
+            console.log("User created successfully");
+          } else {
+            console.log("Error creating user:", error);
+          });
       },
       signedIn: function () {
         return ref.getAuth();

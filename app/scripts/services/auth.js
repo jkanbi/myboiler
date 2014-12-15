@@ -2,29 +2,34 @@
 'use strict';
 
 myBoilerApp.factory('Auth',
-  function ($firebaseSimpleLogin, FIREBASE_URL, $rootScope) {
+  function ($firebaseAuth, FIREBASE_URL, $rootScope) {
     var ref = new Firebase(FIREBASE_URL);
-
-    var auth = $firebaseSimpleLogin(ref);
 
     var Auth = {
       register: function (user) {
-        return auth.$createUser(user.email, user.password);
+        return ref.createUser({"email" : user.email, "password": user.password}, function(error) {
+          if (error === null) {
+            console.log("User created successfully");
+          } else {
+            console.log("Error creating user:", error);
+          };
+        });
+
       },
       signedIn: function () {
-        return auth.user !== null;
+        return ref.getAuth();
       },
       login: function (user) {
-        return auth.$login('password', user);
+        return ref.authWithPassword({"email": user.email,"password" : user.password},function(){});
       },
       flogin:function () {
-        return auth.$login('facebook',{scope:'email,user_likes'});
+        return ref.authWithOAuthPopup("facebook",{scope:'email,user_likes'});
       },
       glogin:function () {
-        return auth.$login('google',{scope:'https://www.googleapis.com/auth/plus.login'});
+        return ref.authWithOAuthPopup("google",{scope:'https://www.googleapis.com/auth/plus.login'});
       },
       logout: function () {
-        auth.$logout();
+        ref.unauth();
       }
     };
 
