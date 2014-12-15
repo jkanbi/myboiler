@@ -9,9 +9,8 @@
     "angular-resource": "1.2.x",
     "angular-route": "1.2.x",
     "bootstrap-sass-official": "3.2.x",
-    "firebase": "1.1.1",
-    "firebase-simple-login": "1.6.3",
-    "angularfire": "0.8.2",
+    "firebase": "2.0.4",
+    "angularfire": "0.9.0",
     "angular-fontawesome": "~0.3.0",
     "cookieCuttr": "*"
   },
@@ -22,6 +21,6 @@
     "angular": "1.2.x",
     "modernizr": "2.8.x",
     "jquery": "1.x.x",
-    "firebase": "1.1.1"
+    "firebase": "2.0.4"
   }
 }
