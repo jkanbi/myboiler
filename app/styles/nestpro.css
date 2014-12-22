@@ -10,7 +10,7 @@
     speak: none;
     -webkit-font-feature-settings: "liga", "dlig";
     -moz-font-feature-settings: "liga=1,  dlig=1";
-    -moz-font-feature-settings: "liga", "dlig";
+    -moz-font-feature-settings: "ligaf", "dlig";
     -ms-font-feature-settings: "liga", "dlig";
     -o-font-feature-settings: "liga", "dlig";
     font-feature-settings: "liga", "dlig";
@@ -2156,7 +2156,7 @@ html.nr header .logo a {
 }
 .homepage .signup {
     background-color: #000;
-    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background_c-59b5186ff0811b3f21124fcca18ee855.jpg);
+    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background_c-2463d38f4aa23c5095988615e3ccea10.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-position: 50% 139%;
@@ -2165,20 +2165,20 @@ html.nr header .logo a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .signup {
-    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background_c_2x-cb45907f30f232eae7cc9dca8d9be89c.jpg);
+    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background_c_2x-541759dcd02aa5636cee5ac53518f88f.jpg);
     -webkit-background-size: 930px 563px;
     -moz-background-size: 930px 563px;
     -o-background-size: 930px 563px;
     background-size: 930px 563px;
 }
 }.homepage .signup:lang(en-US) {
-    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background-86ae263c12ac9d74755af2ae149c39d3.jpg);
+    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background-cd0b752e9407148c3b83bb64ddbbe396.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-position: 50% 139%}
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .signup: lang(en-US) {
-    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background_2x-637562f7eb48fe597cce3e567d2f13cb.jpg);
+    background-image: url(https://pro.nest.com/static-assets/homepage/mobile_signup_background_2x-cf321173b83a9a3a14b7ae3d1950e923.jpg);
     -webkit-background-size: 930px 563px;
     -moz-background-size: 930px 563px;
     -o-background-size: 930px 563px;
@@ -2270,7 +2270,7 @@ html.nr header .logo a {
 }
 }.homepage .works-with-nest {
     background-color: #f2f4f6;
-    background-image: url(https://pro.nest.com/static-assets/homepage/whirlpool-7240d94f9076ba4b624014b238b5fc82.jpg);
+    background-image: url(https://pro.nest.com/static-assets/homepage/whirlpool-c66dfd3e4cfd73b3a01b702eb8d69fdd.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-position: 50% 95%;
@@ -2322,78 +2322,78 @@ html.nr header .logo a {
     display: inline-block;
 }
 .homepage .works-with-nest ul.partners .logo-chamberlain {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_chamberlain-ef1ca50899145cee7c169393ada2e958.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_chamberlain-bd555e2ed24bcb679af00947590444a9.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .works-with-nest ul.partners .logo-chamberlain {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_chamberlain_2x-94c2efb056a7852bad3e856fbe788155.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_chamberlain_2x-534eda3b4f97b131953cc55c818fc624.png);
     -webkit-background-size: 63px 5.5px;
     -moz-background-size: 63px 5.5px;
     -o-background-size: 63px 5.5px;
     background-size: 63px 5.5px;
 }
 }.homepage .works-with-nest ul.partners .logo-benz {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_benz-538c0571037fe134c5550194e0d216a3.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_benz-f4a6fb2aa2b246bb4fea29cfc231f974.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .works-with-nest ul.partners .logo-benz {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_benz_2x-d23956c74d3651883e8a3ed5e57861b1.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_benz_2x-79b4fcc4838baed540295aa7f443f8ee.png);
     -webkit-background-size: 64px 16.5px;
     -moz-background-size: 64px 16.5px;
     -o-background-size: 64px 16.5px;
     background-size: 64px 16.5px;
 }
 }.homepage .works-with-nest ul.partners .logo-ifttt {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_ifttt-8390092559b0ef289898448662d66f6b.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_ifttt-750f138e7b6dac1221589d0a8d892163.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .works-with-nest ul.partners .logo-ifttt {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_ifttt_2x-7f013608bd6b3f38ec9a67ff12c7db86.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_ifttt_2x-6f57643607039c32838297a8022e5054.png);
     -webkit-background-size: 44px 11.5px;
     -moz-background-size: 44px 11.5px;
     -o-background-size: 44px 11.5px;
     background-size: 44px 11.5px;
 }
 }.homepage .works-with-nest ul.partners .logo-jawbone {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_jawbone-90c0ab99a3637f35c61d5a8eff9e5786.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_jawbone-cd9cbbf40179a5a352836fb32700c160.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .works-with-nest ul.partners .logo-jawbone {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_jawbone_2x-bf6664a79055f414667015bed93c6221.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_jawbone_2x-1f4b9600fff199b9a1cb2cf7b709b765.png);
     -webkit-background-size: 52.5px 8px;
     -moz-background-size: 52.5px 8px;
     -o-background-size: 52.5px 8px;
     background-size: 52.5px 8px;
 }
 }.homepage .works-with-nest ul.partners .logo-lifx {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_lifx-f8d73a07dafc3bc97c1d00e4356eee37.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_lifx-8f6e87b4feeb4f2d223f67ca7087bf21.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .works-with-nest ul.partners .logo-lifx {
-    background-image: url(https://pro.nest.com/static-assets/homepage/logo_lifx_2x-6bf47597b39bf7ea15f46d569da9edb8.png);
+    background-image: url(https://pro.nest.com/static-assets/homepage/logo_lifx_2x-013e4833708e89b38bbec8ae4d328e40.png);
     -webkit-background-size: 43.5px 16px;
     -moz-background-size: 43.5px 16px;
     -o-background-size: 43.5px 16px;
     background-size: 43.5px 16px;
 }
 }.homepage .works-with-nest ul.partners .logo-logitech {
-    background-image: url(https://pro.nest.com//static-assets/homepage/logo_logitech-27f6e4654d9d7e7a70a0606d5ae57866.png);
+    background-image: url(https://pro.nest.com//static-assets/homepage/logo_logitech-942c9d81245ed4ebc843791abd66b836.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),  (min-resolution: 144dpi) {
     .homepage .works-with-nest ul.partners .logo-logitech {
-    background-image: url(https://pro.nest.com//static-assets/homepage/logo_logitech_2x-602fbacea729d8d29fbf24d591bdf31a.png);
+    background-image: url(https://pro.nest.com//static-assets/homepage/logo_logitech_2x-bca5d10eefae9a101a9d98ad7920072b.png);
     -webkit-background-size: 66.5px 11.5px;
     -moz-background-size: 66.5px 11.5px;
     -o-background-size: 66.5px 11.5px;
@@ -2628,7 +2628,7 @@ html.nr .homepage .signup .start-here p {
 }
 @media screen and (min-width: 768px) {
     .homepage .signup {
-    background-image: url(https://pro.nest.com/static-assets/homepage/signup_background_c-e99cd0657ac8c8eedf8f187686ba61ac.jpg);
+    background-image: url(https://pro.nest.com/static-assets/homepage/signup_background_c-3bb685aa56ebb94c525ac7be9c2a6a9b.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-position: 77% 139%;
