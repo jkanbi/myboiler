@@ -83,6 +83,14 @@ border-color: #FA787E;
 border-color: #78FA89;
 }
 
+.tagline{
+	font-family	: lato;
+	font-size: 	24px;
+	color:#AEAEAE;
+	text-align: center;	
+	margin-top: -25px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}		
 
 @media (min-width:1024px) {
 	.navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;padding: 7px 8px;}
@@ -203,6 +211,7 @@ ul.footer-link li a:hover{text-decoration:underline}
 .banner{margin-top:0px !important}
 ul.dropdownWidth li{ width: 100% !important;}
 ul.dropdownWidth li a{ width: 100% !important;}
+.tagline{font-size: 16px; max-width: 80%;}
 }
 
 
@@ -237,7 +246,7 @@ ul.dropdownWidth li a{ width: 100% !important;}
 .mrgntp5{float: none !important;margin-bottom: 5px;margin-top:15px;padding-right:10px;}
 .btn-primary, .btn-default {width:100% !important}
 .height122{height:40px;}
-
+.tagline{font-size: 18px; max-width: 80%;}
 }
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
 .paddlt-rt0{padding-left:0px; padding-right:0px}.heading4 {padding-top:40px;}.margintop10{margin-top:10px}
