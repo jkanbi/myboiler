@@ -94,7 +94,7 @@ border-color: #78FA89;
 
 @media (min-width:1024px) {
 	.navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;padding: 7px 8px;}
-	.tagline{text-align:left;}
+	.tagline{text-align:center;}
 }
 
 
@@ -413,6 +413,11 @@ ul.dropdownWidth li a{ width: 100% !important; color:#ffffff; text-align:center}
 .bg-white{background:#ffffff; min-height: 80px }
 .marginbt10{margin-bottom:10px;}
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+.tagline {text-align: center;}
+}
+
 /*CSS for colapsed navigation for 768px to 991px
 @media (max-width:1024px) {
 	.navbar-header {float: none;}
