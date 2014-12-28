@@ -94,6 +94,7 @@ border-color: #78FA89;
 
 @media (min-width:1024px) {
 	.navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;padding: 7px 8px;}
+	.tagline{text-align:left;}
 }
 
 
