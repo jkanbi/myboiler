@@ -22,7 +22,7 @@ myBoilerApp.directive('contentMarkdown', function ($http) {
       scope: { link:'@' },
       link: function (scope, element, attrs) {
         attrs.$observe('link',function(link){
-            $http.get('https://myboiler.com/v3/components/content/files/' + link).success(function(response){
+            $http.get('components/content/files/' + link).success(function(response){
               var htmlText = converter.makeHtml(response);
               element.html(htmlText);
             });
