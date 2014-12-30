@@ -1,8 +1,13 @@
-@media (min-width:1024px) {#pcontainer{max-width:1280px;padding:auto; margin:auto; text-align:left; background-color:#FFFFFF; box-shadow: -10px 0 20px -5px #DCDCDC, 10px 0 20px -5px #DCDCDC;}  .container {/* width:940px; */}} 
+@media (min-width:1024px) {
+	#pcontainer{max-width:1280px;padding:auto; margin:auto; text-align:left; background-color:#FFFFFF; box-shadow: -10px 0 20px -5px #DCDCDC, 10px 0 20px -5px #DCDCDC;}
+	.content{color:#8a9298; padding: 50px 75px 50px 75px; font-family: Arial;}
+	}  
+	.container {/* width:940px; */}} 
 html {overflow-x: hidden;}
 body { margin-top:0px; font-family:lato; color:#343433; background-color: #fafafa; overflow-x: hidden; }
 a {color: #34519C }
 a:hover,a:focus{outline:none; text-decoration:none}
+.content{color:#8a9298; font-family: Arial;}
 .ovfl{overflow:hidden}
 .algn-center{text-align:center}
 .btn:hover, .btn:focus{color:ffffff}
