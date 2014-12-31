@@ -14,7 +14,6 @@ a:hover,a:focus{outline:none; text-decoration:none}
 .space00{padding-top:70px;}
 .paddall{padding-left:30px; padding-right:20px; padding-top:10px; padding-bottom:10px; overflow:hidden}
 .resultpaddall{padding:10px; overflow:hidden}
-
 .paddall1{padding:14px}
 .paddlt4{padding-left:4px }
 .paddlt7{padding-left:7px }
@@ -46,21 +45,17 @@ a:hover,a:focus{outline:none; text-decoration:none}
 .height22{height:22px}
 .height82{height:82px}
 .height122{height:122px}
-
 .heading { font-size:18px; color:#312f5e; }
 .heading2{font-size:18px; color:#343433; }
 .heading3 {font-size:14px; color:#312f5e; font-weight:bold; text-transform:uppercase }
 .heading4 {font-size:18.5px; color:#312f5e; font-weight:bold; text-transform:uppercase}
-
 .font-size18{font-size:18px; }
 .font-size12{font-size:12px; color:#828282 }
 .font-size28{font-size:28px; line-height:32px}
 .font-size24{font-size:24px; line-height:32px}
-
 .left-bg{background:none repeat scroll 0 0 #F0F0F0;border:1px solid #FFFFFF;padding-bottom:15px;padding-top:10px; min-height:492px;}
 .img-border{border:2px solid #fff}
 .sidebar-border{border-top:2px solid #D4D3D3;border-bottom:2px solid #D4D3D3}
-
 .color{color:#312f5e}
 .text-underline { text-decoration:underline }
 .bg-white{background:#ffffff; }
@@ -72,7 +67,7 @@ a:hover,a:focus{outline:none; text-decoration:none}
 /**************** banner end *************************/
 /**************** nav Start *************************/
 .navbar-nav{float:right}
-.navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;padding: 4px 5px;}
+.navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;}
 .navbar-nav > li.span { float:right; text-align:center; }
 
 .ng-invalid.ng-dirty {border-color: #FA787E;}
@@ -86,7 +81,6 @@ a:hover,a:focus{outline:none; text-decoration:none}
 	margin-top: -25px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
-
 .orImages{background:url(../images/or.png) 0px 0px no-repeat; width:50%;height:151px; text-align:center;margin: 0 auto;}
 .facebook{background:#3a589b; min-width:136px; height:40px; line-height:40px; color:#ffffff; font-size:18px; padding-left:5px}
 .google-plus{background:#d6492f; min-width:136px; height:40px; line-height:40px; color:#ffffff; font-size:18px; padding-left:5px}
@@ -113,19 +107,16 @@ a:hover,a:focus{outline:none; text-decoration:none}
   /**************** Butten Start *************************/
 .btn-primary-custom { background:#2f498d; height:40px; width:100%; text-transform:uppercase; font-size:11px; font-weight:bold; color:#ffffff; padding: 6px 10px !important;}
 .btn-primary-custom:hover{background:#253d75; color:#ffffff;}
-
 .btn-learn-more { background:url(../images/learn-more.png) 0 0 repeat;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;height:40px; width:140px; text-transform:uppercase; font-size:11px; font-weight:bold; color: #ffffff; padding-left:30px; border:none}
 .btn-learn-more a, .btn-learn-more a:hover{background:#000000; text-transform:uppercase; font-size:11px;}
 .search{background:#c13534; height:40px; width:100%; text-transform:uppercase; font-size:11px; font-weight:bold; color:#ffffff ; text-align:center }
 .search{}
 .search:hover{color:#ffffff; background:#992b2a}
-
 /**************** butten Start *************************/
 .main-heading { background:url(../images/main-heading-bg.png) 0 0 repeat-x; height:60px; width:100% }
 .main-heading h2 { text-align:center; background:#312f5e; max-width:300px; font-size:18px; line-height:60px; margin:0 auto; color:#fff; height:60px; }
 .main-heading2 { background:url(../images/main-heading-bg2.png) 0 0 repeat-x; height:60px; width:100% }
 .main-heading2 h2 { text-align:center; background:#312f5e; max-width:300px; font-size:18px; line-height:60px; margin:0 auto; color:#fff; height:60px; text-transform:uppercase;}
-
 .bg-gray { background:#ebebeb; overflow:hidden; padding-bottom:20px }
 .input-bg{/* background:url(../images/sprite.png) 0 0 no-repeat;*/ border-top:2px solid #b9b9ba; color: #555555; display: block; font-size: 14px; height:40px; padding:6px 7px; vertical-align: middle;  margin-right:15px; margin-bottom:5px}
 .input-bg1{/* background:url(../images/sprite.png) 0px -46px no-repeat;*/ border:none; background:#ffffff;border-top:2px solid #b9b9ba;  color: #555555; display: block; font-size: 14px; height:40px; padding:6px 12px; vertical-align: middle; width:100%; margin-right:3px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
@@ -133,20 +124,17 @@ a:hover,a:focus{outline:none; text-decoration:none}
 .input-bg3{ background:url(../images/sprite.png) 0px -145px no-repeat; border:none; color: #555555; display: block; font-size:14px; height:40px; padding:6px 12px; vertical-align: middle; width:140px; margin-right:3px }
 .boilername{background:#f5f5f5; border-bottom:2px solid #d4d3d3; border-top:2px solid #d4d3d3; width:100%; overflow:hidden}
 .boilername-top{border-top:2px solid #d4d3d3;}
-
 #footer{width:100%;background:#9da6ae;}
 ul.footer-signin{margin:0px; padding:0px}
 ul.footer-signin li{float:left; display:inline-block; padding-right:15px; color:#fff}
 ul.footer-signin li a{color:#fff}
 ul.footer-signin li a:hover{text-decoration:underline}
-
 ul.footer-link{margin:0px; padding:0px}
 ul.footer-link li{padding-right:15px; color:#fff; list-style:none}
 ul.footer-link li a{color:#ffffff; font-family:arial;font-size:12px;line-height:30px;}
 ul.footer-link li a:hover{text-decoration:underline}
 .footer-text{padding-top:41px; padding-bottom:20px}
 .footer-text p{color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:10px; opacity: 0.5; text-align:center}
-
 .modal-dialog{width:750px}
 .close{opacity: 100;}
 .modal-footer{border-bottom:0px solid #E5E5E5 !important; }
@@ -223,7 +211,6 @@ label:before { content:''; right:6px; top:0px; width:20px; height:20px; backgrou
 .line{border-top:1px solid #d8d4d4}
 }
 
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
  /* STYLES GO HERE */
 .consumer_class{background:url(../images/nest320px.png) 0px 0px no-repeat; height:300px; width:320px }
@@ -237,7 +224,6 @@ label:before { content:''; right:6px; top:0px; width:20px; height:20px; backgrou
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 .content img{max-width:100%;height:auto;}
-.btn-primary-custom {margin-top: 7px}
 .or{background: url("../images/or3.png") no-repeat scroll 57px 0 rgba(0, 0, 0, 0) !important; height: 46px !important;margin-top:-4% !important; width:100%!important; text-align:center; margin-left:22% !important}
 .orImages{background:url(../images/or2.png) 0px 0px no-repeat !important; width:66% !important; height:48px !important; margin-top:-17px !important}
 .orImages img{}
@@ -296,7 +282,6 @@ ul.dropdownWidth li a{ width: 100% !important;}
 .line{border-top:1px solid #d8d4d4}
 }
 
-
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
 .paddlt-rt0{padding-left:0px; padding-right:0px}.heading4 {padding-top:40px;}.margintop10{margin-top:10px}
 .left-bg { min-height:200px;}
@@ -333,9 +318,3 @@ ul.dropdownWidth li a{ width: 100% !important;}
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11,.navbar-header {float: left;}
 .container{max-width: 1170px;}
 }
-
-
-
-
-
-
