@@ -26,10 +26,11 @@ function browserSyncInit(baseDir, files, browser) {
   browser = browser === undefined ? 'default' : browser;
 
   browserSync.instance = browserSync.init(files, {
-    startPath: '/index.html',
+    startPath: "/",
     server: {
       baseDir: baseDir,
-      middleware: proxyMiddleware
+      //middleware: proxyMiddleware  
+      //https://github.com/Swiip/generator-gulp-angular/issues/44
     },
     browser: browser
   });
