@@ -210,13 +210,10 @@ label:before { content:''; right:6px; top:0px; width:20px; height:20px; backgrou
 /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
 
 @media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
-  .usericon{text-align: center; width:100%;}
+.usericon{text-align: center; width:100%;}
 .navbar-brand{padding-left: 15px !important;}
 .font-size18 {font-size: 13px;}
 .tablearrow{ margin-top: 20px !important;}
-.banner img {width: 480px;Height:250px}
-.consumer_class{background:url(../images/nest320px.png) 0px 0px no-repeat; height:300px; width:320px }
-.engineer_class{background:url(../images/banner-col-xs-1.png) 0px 0px no-repeat; height:300px; width:320px}
 .banner img{display: none;margin-top:0px !important}
 .banner{margin-top:0px !important}
 .line2{margin-top:31px; border-top: 1px solid #D8D4D4}
@@ -224,6 +221,18 @@ label:before { content:''; right:6px; top:0px; width:20px; height:20px; backgrou
 .orImages{background:url(../images/or2.png) 0px 0px no-repeat !important; width:100% !important; height:40px !important; margin-top:-17px !important}
 .orImages img{}
 .line{border-top:1px solid #d8d4d4}
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
+ /* STYLES GO HERE */
+.consumer_class{background:url(../images/nest320px.png) 0px 0px no-repeat; height:300px; width:320px }
+.engineer_class{background:url(../images/banner-col-xs-1.png) 0px 0px no-repeat; height:300px; width:320px}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape){
+.consumer_class{background:url(../images/nest480px.png) 0px 0px no-repeat; height:300px; width:480px }
+.engineer_class{background:url(../images/banner-col-xs-1-480.png) 0px 0px no-repeat; height:300px; width:480px}
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
@@ -251,8 +260,7 @@ ul.dropdownWidth li a{ width: 100% !important; color:#ffffff; text-align:center}
 .margintop10{margin-top:10px}
 .paddlt-rt0{padding-left:0px; padding-right:0px}
 .width40{width:40px; height:30px;}
-.consumer_class{background:url(../images/nest480px.png) 0px 0px no-repeat; height:300px; width:480px }
-.engineer_class{background:url(../images/banner-col-xs-1-480.png) 0px 0px no-repeat; height:300px; width:480px}
+
 .banner img{display: none;margin-top:0px !important}
 .banner{margin-top:0px !important}
 ul.dropdownWidth li{ width: 100% !important;}
