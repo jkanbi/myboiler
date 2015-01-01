@@ -5,6 +5,7 @@
 
 
 	var rootdir = "views/";
+	var consumerDir = "components/consumer/";
 	var userLoginDir = "components/userlogin/";
 	var crootdir = "views/consumer/";
 	var erootdir = "views/engineer/";
@@ -42,7 +43,7 @@
 	        controller:'documentsCtrl',
 	      })
 		  .when('/consumer-engineer-search', {
-			templateUrl: crootdir+'newengineerSearch.html',
+			templateUrl: consumerDir +'find-engineer/newengineerSearch.html',
 			controller: 'enggSearchCtrl'
 		  })
 		  .when('/consumer-contact', {
