@@ -137,7 +137,11 @@
 		  	controller : 'engineerCtrl'
 		  	//controller: 'nestThermostatCtrl'
 		  })
-		  .otherwise ({ redirectTo: '/index.html' });
+		  .when('/404',{
+		  	templateUrl: rootdir + '404.html'
+		  	//controller: 'nestThermostatCtrl'
+		  })
+		  .otherwise ({ redirectTo: '/404'});
 		  
 		 /*  if(window.history && window.history.pushState)
 		  {
