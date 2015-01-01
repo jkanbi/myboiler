@@ -5,8 +5,10 @@
 
 
 	var rootdir = "views/";
+	var userLoginDir = "components/userlogin/";
 	var crootdir = "views/consumer/";
 	var erootdir = "views/engineer/";
+	var blogdir = "components/blog/";
 
 	//http://stackoverflow.com/questions/24227239/unknown-provider-firebaseprovider-firebase
 	var myBoilerApp = angular.module('myBoiler',['ngRoute', 'firebase','blogApp']);
