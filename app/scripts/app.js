@@ -103,15 +103,15 @@
 			controller : 'engineerCtrl'
 		  })
 		  .when('/register', {
-			templateUrl: rootdir+'register.html',
+			templateUrl: userLoginDir+'register.html',
 			controller: 'AuthCtrl'
 		  })
 		  .when('/login', {
-			templateUrl: rootdir+'login.html',
+			templateUrl: userLoginDir+'login.html',
 			controller: 'AuthCtrl'
 		  })
 		  .when('/account', {
-			templateUrl: rootdir+'account.html',
+			templateUrl: userLoginDir+'account.html',
 			controller: 'accountCtrl'
 		  })
 		  .when('/nest',{
