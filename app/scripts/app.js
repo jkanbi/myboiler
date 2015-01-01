@@ -62,6 +62,14 @@
 			templateUrl : erootdir+'blog.html',
 			controller : 'engineerCtrl'
 		  })
+		  .when('/blog', {
+			templateUrl : blogdir+'blog.html',
+			controller : 'blogPostsCtrl'
+		  })
+		  .when('/blog/:postSlug', {
+			templateUrl : blogdir+'blogPost.html',
+			controller : 'blogPostCtrl'
+		  })
 		  .when('/consumer-services', {
 			templateUrl : crootdir+'consumer_services.html'
 		  })
