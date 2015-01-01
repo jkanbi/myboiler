@@ -4,6 +4,7 @@
 	var contactDir = "components/contact/";
 	var consumerDir = "components/consumer/";
 	var engineerDir = "components/engineer/";
+	var manualsDir = "components/manuals/"
 	var userLoginDir = "components/userlogin/";
 	var crootdir = "views/consumer/";
 	var erootdir = "views/engineer/";
@@ -30,10 +31,10 @@
 			controller: 'mainContentCtrl'
 		  })
 		  .when('/manuals', {
-	        templateUrl: rootdir +'manuals.html',
+	        templateUrl: manualsDir +'manuals.html',
 	        controller: 'manualsCtrl'
 	      }).when('/emanuals', {
-	        templateUrl: rootdir+'manuals.html',
+	        templateUrl: manualsDir +'manuals.html',
 			controller : 'engineerCtrl'
 	      })
 		  .when('/manuals/brands/:brandId', {
