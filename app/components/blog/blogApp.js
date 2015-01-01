@@ -14,6 +14,20 @@ blogApp.factory('Posts', function($http) {
     	}
   });
 
+myBoilerApp.controller('blogCtrl',['$scope', function($scope)
+	{
+		var myDataRef = new Firebase('https://myboiler.firebaseio.com/blogdata/categories').on('child_added',show);
+		
+		function show(snap) 
+		{
+			var item = snap.val();
+			var category = snap.val();  //use name to get child name
+			var itemDashed = item.toString().replace(/\s+/g, '-').toLowerCase();
+			$('.showCategory').append("<li class='cat-item'><a href='http://www.myboiler.com/blog/"+ itemDashed +"'>"+ category +"</a></li>");
+			//console.log(snap);
+		}
+	}]);
+
 blogApp.controller('blogPostsCtrl',['$scope','Posts', function($scope,Posts)
 	{
 		var myDataRef = new Firebase('https://myboiler.firebaseio.com/blogdata/categories').on('child_added',show);
