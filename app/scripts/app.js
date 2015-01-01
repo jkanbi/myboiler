@@ -1,11 +1,9 @@
 	/* App Module */
 	
-//Wrapping your javascript in a closure is a good habit! From CodeSchool.   *Not working for some reason.
-//(function () {
-
-
 	var rootdir = "views/";
+	var contactDir = "components/contact/";
 	var consumerDir = "components/consumer/";
+	var engineerDir = "components/engineer/";
 	var userLoginDir = "components/userlogin/";
 	var crootdir = "views/consumer/";
 	var erootdir = "views/engineer/";
@@ -47,7 +45,7 @@
 			controller: 'enggSearchCtrl'
 		  })
 		  .when('/consumer-contact', {
-			templateUrl: crootdir+'consumercontact.html',
+			templateUrl: contactDir+'contact.html',
 			controller: 'consumerContactController'
 		  })
 		  .when('/how-it-works', {
@@ -101,7 +99,7 @@
 			controller : 'engineerCtrl'
 		  })
 		  .when('/engineer-contact', {
-			templateUrl: crootdir+'consumercontact.html',
+			templateUrl: contactDir+'contact.html',
 			controller : 'consumerContactController',
 			controller : 'engineerCtrl'
 		  })
@@ -153,10 +151,3 @@
         });
     }
   ]);
-  
-//})();
-
-
-
-
-
