@@ -4,6 +4,7 @@ myBoilerApp.controller('AuthCtrl',
   function ($scope, $location, $firebaseAuth, FIREBASE_URL, User) {
     var ref = new Firebase(FIREBASE_URL);
     var user = User;
+    var usersRef = new Firebase(FIREBASE_URL + "/users");
 
     $scope.authObj = $firebaseAuth(ref);
     var authData = $scope.authObj.$getAuth();
@@ -56,6 +57,24 @@ myBoilerApp.controller('AuthCtrl',
 
     $scope.facebooklogin = function () {
       $scope.authObj.$authWithOAuthPopup("facebook",{scope:'email,user_likes'}).then(function(authData) {
+        var isNewUser = true;
+        console.log(authData.uid);
+        usersRef.once('value',function(snapshot){
+          if (snapshot.hasChild(authData.uid)){
+            isNewUser = false;
+          }
+          
+          console.log(isNewUser);
+        });
+
+        console.log(isNewUser);
+        ref.onAuth(function(authData) {
+          if (authData && isNewUser) {
+            // save the user's profile into Firebase so we can list users,
+            // use them in Security and Firebase Rules, and show profiles
+            ref.child("users").child(authData.uid).set(authData);
+          }
+        });
         console.log("Logged in as:", authData.uid);
         $location.path('/');
       }).catch(function(error) {
@@ -65,6 +84,14 @@ myBoilerApp.controller('AuthCtrl',
 
     $scope.googlelogin = function () {
       $scope.authObj.$authWithOAuthPopup("google",{scope:'https://www.googleapis.com/auth/plus.login'}).then(function(authData) {
+        var isNewUser = (ref.child("users").child(authData.uid) == null)?false:true;
+        ref.onAuth(function(authData) {
+          if (authData && isNewUser) {
+            // save the user's profile into Firebase so we can list users,
+            // use them in Security and Firebase Rules, and show profiles
+            ref.child("users").child(authData.uid).set(authData);
+          }
+        });
         console.log("Logged in as:", authData.uid);
         $location.path('/');
       }).catch(function(error) {
