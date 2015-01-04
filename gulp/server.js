@@ -26,7 +26,7 @@ function browserSyncInit(baseDir, files, browser) {
   browser = browser === undefined ? 'default' : browser;
 
   browserSync.instance = browserSync.init(files, {
-    startPath: "/",
+    startPath: "/",  //Was "/index.html" for some reason.
     server: {
       baseDir: baseDir,
       //middleware: proxyMiddleware  

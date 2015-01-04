@@ -47,7 +47,7 @@ gulp.task('html', ['styles', 'scripts', 'views'], function () {
   var cssFilter = $.filter('**/*.css');
   var assets;
 
-  return gulp.src('app/*.html')
+  return gulp.src('app/views/**/*.html')
     .pipe($.inject(gulp.src('.tmp/views/**/*.js'), {
       read: false,
       starttag: '<!-- inject:partials -->',
