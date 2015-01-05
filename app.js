@@ -15,7 +15,7 @@
 
 	myBoilerApp.constant('FIREBASE_URL','https://myboiler.firebaseio.com/') 
 
-	myBoilerApp.config(['$routeProvider', function($routeProvider) 
+	myBoilerApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) 
 	{
 		//commenting out this line (switching to hashbang mode) breaks the app
 	    //-- unless # is added to the templates
@@ -143,10 +143,10 @@
 		  })
 		  .otherwise ({ redirectTo: '/404'});
 		  
-		 /*  if(window.history && window.history.pushState)
+		   if(window.history && window.history.pushState)
 		  {
 			$locationProvider.html5Mode(true);
-		  } */
+		  } 
   }]);
 
 	// The following code allows google analytics to track single page views
