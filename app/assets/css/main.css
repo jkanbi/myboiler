@@ -199,6 +199,7 @@ ul.dropdownWidth li a:hover{background:#34519c !important}
 .fourofour{height:200px;}
 /* BootStrap Overides*/
 .form-control{border: 1px solid #ECECEC;}
+.cc-cookies{width:100%}
 
 @media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
 .usericon{text-align: center; width:100%;}
