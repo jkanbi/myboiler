@@ -26,9 +26,13 @@ RewriteRule ^blog.*$ /$1 [R=301,L]
 RewriteRule ^v2.*$ /$1 [R=301,L]
 RewriteRule ^v3.*$ /$1 [R=301,L]
 
+#http://stackoverflow.com/questions/13977851/htaccess-redirect-to-https-www
+#Now, rewrite to HTTPS:
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 #https://scotch.io/quick-tips/pretty-urls-in-angularjs-removing-the-hashtag
-# Don't rewrite files or directories
+# Dont rewrite files or directories
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
