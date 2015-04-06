@@ -149,9 +149,9 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
-										<input type="text" ng-model="selected.phoneno" name="mphone" id="phone" placeholder="*Phone number" class="form-control rounded-border0" maxlength="10" ng-pattern="PHONE_EXP" ng-class="{errborder:submitted && (engg_search.mphone.$error.required || engg_search.mphone.$error.pattern)}" required/>
+										<input type="text" ng-model="selected.phoneno" name="mphone" id="phone" placeholder="*Phone number" class="form-control rounded-border0" maxlength="11" ng-pattern="PHONE_EXP" ng-class="{errborder:submitted && (engg_search.mphone.$error.required || engg_search.mphone.$error.pattern)}" required/>
 										<span ng-show="submitted && engg_search.mphone.$error.required" ng-hide="true" class="error">Please enter valid phone number</span>
-										<span ng-show="submitted && engg_search.mphone.$error.pattern" ng-hide="true" class="error">Only 10 digit numbers</span>
+										<span ng-show="submitted && engg_search.mphone.$error.pattern" ng-hide="true" class="error">Upto 11 digit numbers only</span>
 									</div>
 								</div>
 
@@ -166,9 +166,9 @@
 
 								<div class="col-md-6">
 									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
-										<input type="text" name="alternate_phone" ng-model="selected.alter_phno" id="alternate_phone" placeholder="Alternate phone" class="form-control rounded-border0" maxlength="10" ng-pattern="PHONE_EXP">
+										<input type="text" name="alternate_phone" ng-model="selected.alter_phno" id="alternate_phone" placeholder="Alternate phone" class="form-control rounded-border0" maxlength="11" ng-pattern="PHONE_EXP">
 										
-										<span ng-show="engg_search.alternate_phone.$error.pattern" ng-hide="true" class="error">Only 10 digit numbers</span>
+										<span ng-show="engg_search.alternate_phone.$error.pattern" ng-hide="true" class="error">Upto 11 digit numbers only</span>
 									</div>
 								</div>
 							</div>
