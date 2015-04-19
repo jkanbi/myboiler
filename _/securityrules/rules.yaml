@@ -1,0 +1,27 @@
+functions:
+  - isLoggedIn(): auth.id !== null
+
+schema: 
+  type: object
+  properties:
+    blogdata:
+      type:object
+      properties:
+        categories:
+          type: object
+    brands:
+      type: object
+
+access:
+  #- location: /
+  #  read: true
+    #write: false
+
+  - location: brands/
+    read:     true
+    write:    false
+
+  - location: blogdata/categories/
+    read:     true
+    write:    false
+

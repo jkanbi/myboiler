@@ -1,0 +1,14 @@
+{
+  "rules":{
+    ".write":"false",
+    ".read":"false",
+    "blogdata": {
+      ".write":"false",
+      ".read":"false"
+    },
+    "brands": {
+      ".write":"(false)",
+      ".read":"true"
+    }
+  }
+}
