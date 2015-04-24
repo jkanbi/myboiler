@@ -141,16 +141,22 @@
 		  	templateUrl: crootdir + 'charges.html',
 		  	//controller : ''
 		  })
+		  .when('/team',{
+		  	templateUrl: crootdir + 'team.html',
+		  	//controller : ''
+		  })
 		  .when('/404',{
 		  	templateUrl: rootdir + '404.html'
 		  	//controller: 'nestThermostatCtrl'
 		  })
 		  .otherwise ({ redirectTo: '/404'});
 		  
+		  /*
 		   if(window.history && window.history.pushState)
 		  {
 			$locationProvider.html5Mode(true);
 		  } 
+		  */
   }]);
 
 	// The following code allows google analytics to track single page views
