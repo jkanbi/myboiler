@@ -137,6 +137,10 @@
 		  	controller : 'engineerCtrl'
 		  	//controller: 'nestThermostatCtrl'
 		  })
+		  .when('/charges',{
+		  	templateUrl: crootdir + 'charges.html',
+		  	//controller : ''
+		  })
 		  .when('/404',{
 		  	templateUrl: rootdir + '404.html'
 		  	//controller: 'nestThermostatCtrl'
