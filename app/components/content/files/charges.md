@@ -32,10 +32,10 @@ MyBoiler.com has clear 100% transparent charges. The rates are shown below. See 
 ###Sunday
 
 <table border="1" style="width:100%; border: 1px solid grey; text-align:center">
-				 <tr><td> 8.00am - 5.00pm</td>   <td>  £75</td></tr>
-				 <tr><td> 5.00pm - 9.00pm </td>  <td>  £95</td></tr>
-				 <tr><td>9.00pm - 12.00am  </td>   <td>  £115</td></tr>
-				 <tr><td>12.00am - 8.00am  </td>   <td>  £135</td></tr>
+				 <tr><td> 8.00am - 5.00pm</td>   <td>  £90</td></tr>
+				 <tr><td> 5.00pm - 9.00pm </td>  <td>  £110</td></tr>
+				 <tr><td>9.00pm - 12.00am  </td>   <td>  £130</td></tr>
+				 <tr><td>12.00am - 8.00am  </td>   <td>  £150</td></tr>
 </table>
 
 <br />
