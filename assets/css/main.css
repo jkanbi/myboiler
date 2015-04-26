@@ -334,7 +334,7 @@ ul.dropdownWidth li a{ width: 100% !important;}
 }
 
 @media (min-width:1025px) {
-	#pcontainer{max-width:1280px;padding:auto; margin:auto; text-align:left; background-color:#FFFFFF; box-shadow: -10px 0 20px -5px #DCDCDC, 10px 0 20px -5px #DCDCDC;}
+	#pcontainer{max-width:1250px;padding:auto; margin:auto; text-align:left; background-color:#FFFFFF; box-shadow: -10px 0 20px -5px #DCDCDC, 10px 0 20px -5px #DCDCDC;}
 	.content{color:#8a9298; padding: 50px 75px 50px 75px; font-family: Arial;}
 	img{max-width:100%;height:auto;}
 	.navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;padding: 7px 8px;}
