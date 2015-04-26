@@ -13,7 +13,8 @@
     "angularfire": "0.9.0",
     "angular-fontawesome": "~0.3.0",
     "cookieCuttr": "*",
-    "angular-showdown": "~0.3.2"
+    "angular-showdown": "~0.3.2",
+    "jssor-slider": "*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.x"
