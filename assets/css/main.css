@@ -78,7 +78,7 @@ a:hover,a:focus{outline:none; text-decoration:none}
 	font-size: 	24px;
 	color:#AEAEAE;
 	text-align: center;	
-	margin-top: -25px;
+	margin-top: 100px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 .orImages{background:url(../images/or.png) 0px 0px no-repeat; width:50%;height:151px; text-align:center;margin: 0 auto;}
