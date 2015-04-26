@@ -340,6 +340,7 @@ ul.dropdownWidth li a{ width: 100% !important;}
 	.navbar-nav > li > a{font-family:lato; font-size:14px; color:#343433;margin-top:12px;padding: 7px 8px;}
 	.tagline{text-align:center;}
 	#find_engg{padding: 0px 50px 0px 50px;}
+	.para {color:white;}
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {select {padding-right:18px}
