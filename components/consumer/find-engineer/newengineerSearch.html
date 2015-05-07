@@ -10,7 +10,7 @@
 </div>
 
 <div class="main-heading2">
-	<h2>Find An Engineer</h2>
+	<h2>Engineer Request</h2>
 </div>
 
 <div class="container">
@@ -20,9 +20,11 @@
 				<div class="row">
 					<div class="innerEnginer content">
 						<div>&nbsp;</div>
-						<p>Your boiler is the heart of your home, it keeps the warmth flowing. It deserves the best professional care. Trusted and Vetted Heating Technicians who specialise and care about the people and also care about your home heating. Fill the form below and we will find you upto 4 engineers to provide you FREE no obligation quotes. <p>
-						<p>*Please Note we are currently only providing technicians for the London Area.</p>
+						<p>Your boiler is the heart of your home, it keeps the warmth flowing. It deserves the best professional care from heating specialists that care about keeping people warm. </p>
 
+						<p>Following are the postcode areas we currently cover: London (N, NW, W,WC and EC), UB, HA, WD, EN. If your home falls outside of these postcode areas, feel free to contact us to see if we are able to send a engineer out to you.</p>
+
+						<p>Please fill the form below and a member of the team will contact you.</p>
 						<!-- Need a MyBoiler vetted boiler Engineer? -->
 					</div>
 				</div>
@@ -194,13 +196,13 @@
 							<div class="row">
 								<div class="col-md-6 col-sm-6">
 									<div class="form-group" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
-										<input type="text" name="house_number" ng-model="selected.houseno" id="house_number" placeholder="*House number" class="form-control rounded-border0" ng-class="{errborder:submitted && engg_search.house_number.$error.required}" required>
+										<input type="text" name="house_number" ng-model="selected.houseno" id="house_number" placeholder="*House Number and/or Name" class="form-control rounded-border0" ng-class="{errborder:submitted && engg_search.house_number.$error.required}" required>
 										<span ng-show="submitted && engg_search.house_number.$error.required" ng-hide="true" class="error">Please enter House no or name</span>
 									</div>
 								</div>
 								<div class="col-md-6 col-sm-6" ng-class="{true:'error'}[submitted && engg_search.enng_email.$error]">
 									<div class="form-group">
-										<input type="text" name="postal_code" ng-model="selected.postalcode" id="postal_code" placeholder="*Postal code" class="form-control rounded-border0" style="text-transform: uppercase;" maxlength="6" ng-class="{errborder:submitted && engg_search.postal_code.$error.required}" required>
+										<input type="text" name="postal_code" ng-model="selected.postalcode" id="postal_code" placeholder="*Postal code" class="form-control rounded-border0" style="text-transform: uppercase;" maxlength="8" ng-class="{errborder:submitted && engg_search.postal_code.$error.required}" required>
 										<span ng-show="submitted && engg_search.postal_code.$error.required" ng-hide="true" class="error">Please enter postal code</span>
 									</div>
 								</div>
@@ -254,7 +256,7 @@
 							<div class="row">
 								<div class="col-md-10">
 									<div class="right-side">
-										<h3>4. Request your quote:</h3>
+										<h3>4. Submit Request:</h3>
 									</div>
 								</div>
 							</div>
@@ -262,7 +264,7 @@
 						<div class="col-md-8">
 							<div class="row">
 								<div class="col-md-6 col-xs-12 col-sm-4">
-									<button class="btn btn-primary width180" type="submit" ng-click="submitted=true">Request your quote<i class="icon-next"> &nbsp;&nbsp; <img alt="" src="/assets/images/right-arrow.png"></i></button>
+									<button class="btn btn-primary width180" type="submit" ng-click="submitted=true">Send Request<i class="icon-next"> &nbsp;&nbsp; <img alt="" src="/assets/images/right-arrow.png"></i></button>
 								</div>
 								<div class="col-md-6 col-xs-12 col-sm-4">
 									<button class="btn width180" type="reset" ng-click="reset()">Reset<i class="icon-next"> &nbsp;&nbsp; <img alt="" src="/assets/images/right-arrow.png"></i></button>
@@ -271,8 +273,8 @@
 							<div class="row">
 								<div class="col-md-12 content">
 									<h5><b>Important:</b></h5>
-									<p class="font-size11">In order to receive accurate prices and quotes, engineers must inspect the project site. These surveys are free and will provide you with an opportunity to assess the professionalism of the quoting company.</p>
-									<p class="font-size11">Your personal information is held in strict confidence and in compliance with The Data Protection Act. It will only be used to allow our approved installers to set up appointments with you and for MyBoiler to keep you informed of latest information and products.</p>
+									<p class="font-size11">In order to receive accurate prices and quotes, our engineers must inspect the project site. These surveys are chargeable in line with our standard <a href ="#/charges">charges</a>. The charge for quotation will be offset against the job should you decide to go ahead. Most quotes require 1 hour, however larger jobs may require more hours.</p>
+									<p class="font-size11">Your personal information is held in strict confidence and in compliance with The Data Protection Act. It will only be used by our staff to set up appointments with you and for MyBoiler.com to keep you informed of latest information and products.</p>
 									<p>* Required field(s)</p>
 								</div>
 							</div>
