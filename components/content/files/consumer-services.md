@@ -4,56 +4,52 @@
 ###Services to help you with your system
 
 <br />
+
+__Heating Services__
+
++	Boiler Repairs and Installations
++	Radiators and Pipes; Installations and Repairs
++ 	Thermostatic Radiator Valves (TRVs)
++	Cylinders and Hot water including Immersionsion Heaters
++	Underfloor Heating (Polypipe, John Guest, Wavin and more)
++	Heating Controls
++	Powerflushing Services
++ 	Landlord Certificates and Annual Servicing
+
 <br />
 
 __Smart Controls__
 
-+	Nest Thermostats and Nest Protects
++	Nest Thermostats and Nest Protects (We are Nest Certified Professionals)
++	Tado Smart Controls
 +	Multizone Heating Controls
-+	Internet Connect Thermostats
++	Honeywell Controls,Evohome and Internet Connected Thermostats (We are Evohome Certified Installers)
 
 <br />
-<br />
 
-We are a Nest Certified Professional. We are currently offering new boiler/replacements with Nest Thermostat 
-included as standard in the London Area. [Contact Us](/#/consumer-contact) using the contact form to get a quote.
+__Solar Thermal Heating__
 
-![Nest Thermostat](https://d24p8oa045rip8.cloudfront.net/assets/store/catalog/bb6f6ab754/thermostat_uk-cae1e647306cc444e793b08211c700b9.jpg)
-![Nest Protect](https://d2gpw04v015qcw.cloudfront.net/images/support/index/landing-smoke_alarm-cf125c52.png)
-
-<br />
-<br />
-
-__Design and Installations__
-
-
-+	
-
-We are able to provide vetted engineers in the London Area for Installations. [Contact Us](/#/consumer-contact) using the contact form to get a quote.
-All tradesman we use are highly experienced.
++	Solar Thermal Panel Repairs and Installations
++	Annual Servicing
++	Multizone Heating Controls
++	Honeywell Evohome full home Standard and Internet Controls
 
 <br />
+
+__Design and Consulting__
+
++	Full System Design and Consulting (Please note seperate rates apply)
+
 <br />
 
 
-__Maintenance & Repair__
+<!-- 
+__Aftercare__
 
++	Boiler Insurance Services 
++	Annual Service Contracts.
 
-+	
-
-We are able to provide engineers in the London Area for powerflushing. [Contact Us](/#/consumer-contact) using the contact form to get a quote.
-[See our Powerflushing Post](https://myboiler.com/blog/water-treatment/power-flushing-of-wet-central-heating-systems/)
-
-<br />
-<br />
-
-__Insurance and Energy Providers__
-
-
-+	_[Energy Providers and Comparison Sites](../../../blog/energy/energy-providers-gas-and-electricity/)._
-
-<br />
-<br />
+<br /> -->
 
 
 
