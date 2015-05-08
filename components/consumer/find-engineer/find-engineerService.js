@@ -20,84 +20,57 @@ myBoilerApp.service('saveDataService', function()
 		
 	this.saveInfo = function(selected)
 	{		
-		if(selected.subscribefor==undefined || selected.subscribefor==false)
-		{
-			subscribe = "No";
-		}
-		else
-		{
+		if(selected.subscribefor==undefined || selected.subscribefor==false) {
+				subscribe = "No";
+		} else {
 			subscribe = "Yes";
 		}
 		
-		if(selected.usr_salutation==undefined || selected.usr_salutation=='')
-		{
+		if(selected.usr_salutation==undefined || selected.usr_salutation=='') {
 			usrSalutation = "No";
-		}
-		else
-		{
+		} else {
 			usrSalutation=selected.usr_salutation;
 		}
 		
-		if(selected.user_fname==undefined)
-		{
+		if(selected.user_fname==undefined) {
 			firstName = "Not Provided";
-		}
-		else
-		{
+		} else {
 			firstName = selected.user_fname;
 		}
 		
-		if(selected.user_lname==undefined)
-		{
+		if(selected.user_lname==undefined) {
 			lastName = "Not Provided";
-		}
-		else
-		{
+		} else {
 			lastName = selected.user_lname;
 		}
 		
-		if(selected.workDescription==undefined || selected.workDescription=="")
-		{
+		if(selected.workDescription==undefined || selected.workDescription=="")	{
 			wDescription = "No Description Provided";
-		}
-		else
-		{
+		} else {
 			wDescription = selected.workDescription;
 		}
 		
-		if(selected.call_time=='' || selected.call_time==undefined)
-		{
+		if(selected.call_time=='' || selected.call_time==undefined) {
 			cTime = "N/A";
-		}
-		else
-		{
+		} else {
 			cTime = selected.call_time;
 		}
 		
-		if(selected.alter_phno=='' || selected.alter_phno==undefined)
-		{
+		if(selected.alter_phno=='' || selected.alter_phno==undefined) {
 			alterPhno = "N/A";
-		}
-		else
-		{
+		} else {
 			alterPhno = selected.alter_phno;
 		}
 		
-		if(selected.propertyType==''|| selected.propertyType==undefined)
-		{
+		if(selected.propertyType==''|| selected.propertyType==undefined) {
 			propertyType = "N/A";
-		}
-		else
-		{
+		} else {
 			propertyType = selected.propertyType;
 		}
 		
-		if(selected.propertyOwner=='' || selected.propertyOwner==undefined)
-		{
+		if(selected.propertyOwner=='' || selected.propertyOwner==undefined) {
 			propertyOwn = "N/A";
-		}
-		else
-		{
+		} else {
 			propertyOwn = selected.propertyOwner;
 		}
 		
