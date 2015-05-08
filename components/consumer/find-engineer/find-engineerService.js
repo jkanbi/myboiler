@@ -105,60 +105,28 @@ myBoilerApp.service('saveDataService', function()
 		/*  alert(newRef.name());  */
 		newRef.set(
 		{
-			id: uniqueId,
+			_TimeStamp: TimeStamp, 
 
-			TimeStamp: TimeStamp, 
+			aux_id: uniqueId,
+			aux_Subscribefor: subscribe,
 
-			Subscribefor: subscribe,
+			job_BoilerType: selected.fuel_type.fType, 
+			job_JobType: selected.jType.mData, 
+			job_WorkScaleTime: wTime,
+			job_WorkDescription: wDescription,
+			job_BestTimeToCall: cTime,
 
-			JobDetails:{
-			
-				BoilerType: selected.fuel_type.fType, 
-				
-				JobType: selected.jType.mData, 
-				
-				WorkScaleTime: wTime,
-				
-				WorkDescription: wDescription,
+			contact_salutation: usrSalutation,
+			contact_FirstName: firstName,
+			contact_LastName: lastName,
+			contact_user_email: selected.inputemail, 
+			contact_Phoneno: selected.phoneno, 
+			contact_AlternatePhone: alterPhno,
 
-				BestTimeToCall: cTime,
-				
-				},
-
-			ContactDetails:
-				{
-
-				salutation: usrSalutation,
-			
-				FirstName: firstName,
-
-				LastName: lastName,
-			
-				user_email: selected.inputemail, 
-			
-				Phoneno: selected.phoneno, 
-				
-				AlternatePhone: alterPhno,
-
-				HouseNameNo: selected.houseno, 
-
-				PostCode: selected.postalcode,
-
-				PropertyOwner: propertyOwn,
-
-				},
-			
-
-			PropertyDetails:
-				{
-			
-				PropertyType: propertyType,
-
-				HouseNameNo: selected.houseno, 
-
-				PostCode: selected.postalcode,
-
-				}
+			property_HouseNameNo: selected.houseno, 
+			property_PostCode: selected.postalcode,
+			property_PropertyOwner: propertyOwn,
+			property_PropertyType: propertyType
 		});
 	}
 });
