@@ -87,8 +87,8 @@ myBoilerApp.service('saveDataService', function()
 			job_JobType: selected.jType.mData, 
 			job_WorkScaleTime: wTime,
 			job_WorkDescription: wDescription,
-			job_BestTimeToCall: cTime,
-
+			
+			contact_BestTimeToCall: cTime,
 			contact_salutation: usrSalutation,
 			contact_FirstName: firstName,
 			contact_LastName: lastName,
