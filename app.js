@@ -9,6 +9,7 @@
 	var crootdir = "views/consumer/";
 	var erootdir = "views/engineer/";
 	var blogdir = "components/blog/";
+	var title = ' - My Boiler';
 
 	//http://stackoverflow.com/questions/24227239/unknown-provider-firebaseprovider-firebase
 	var myBoilerApp = angular.module('myBoiler',['ngRoute', 'firebase','blogApp']);
@@ -23,14 +24,17 @@
 	    //$locationProvider.html5Mode(true);
 
 	    $routeProvider.when('/', {
+	    	title: 'My Boiler - Keeping People Warm',
 			templateUrl: crootdir +'consumer_main_content.html',
 			controller: 'mainContentCtrl'
 		  })
 		  .when('/consumer', {
+		  	title: 'My Boiler - Keeping People Warm',
 			templateUrl: crootdir +'consumer_main_content.html',
 			controller: 'mainContentCtrl'
 		  })
 		  .when('/manuals', {
+		  	title: 'Boiler Manuals' + title,
 	        templateUrl: manualsDir +'manuals.html',
 	        controller: 'manualsCtrl'
 	      }).when('/emanuals', {
@@ -42,10 +46,12 @@
 	        controller:'documentsCtrl',
 	      })
 		  .when('/consumer-engineer-search', {
+		  	title: 'Engineer Request' +title,
 			templateUrl: consumerDir +'find-engineer/newengineerSearch.html',
 			controller: 'enggSearchCtrl'
 		  })
 		  .when('/consumer-contact', {
+		  	title: 'Contact Us' + title,
 			templateUrl: contactDir+'contact.html',
 			controller: 'consumerContactController'
 		  })
@@ -53,6 +59,7 @@
 			templateUrl: rootdir+'how_it_works.html'
 		  })
 		  .when('/consumer-tips', {
+		  	title: 'Advice and Top Tips' + title,
 			templateUrl: crootdir+'tooltips.html'
 		  })
 		  .when('/cblog', {
@@ -64,14 +71,17 @@
 			controller : 'engineerCtrl'
 		  })
 		  .when('/blog', {
+		  	title: 'Blog' + title,
 			templateUrl : blogdir+'blog.html',
 			controller : 'blogPostsCtrl'
 		  })
 		  .when('/blog/:postSlug', {
+		  	title: 'Blog' + title,
 			templateUrl : blogdir+'blogPost.html',
 			controller : 'blogPostCtrl'
 		  })
 		  .when('/consumer-services', {
+		  	title: 'Our Services' + title,
 			templateUrl : crootdir+'consumer_services.html'
 		  })
 		  .when('/ccopyright', {
@@ -82,6 +92,7 @@
 			controller : 'engineerCtrl'
 		  })
 		  .when('/cprivacy', {
+		  	title: 'Privacy Policy' + title,
 			templateUrl : rootdir+'privacypolicy.html'
 		  })
 		  .when('/eprivacy', {
@@ -89,6 +100,7 @@
 			controller : 'engineerCtrl'
 		  })
 		  .when('/cterms', {
+		  	title: 'Terms and Conditions' + title,
 			templateUrl : rootdir+'termsnconditions.html'
 		  })
 		  .when('/eterms' , {
@@ -96,6 +108,7 @@
 			controller : 'engineerCtrl'
 		  })
 		  .when('/engineer',{
+		  	title: 'Engineer Portal' + title,
 			templateUrl : erootdir+'engineer_main_content.html',
 			controller : 'engineerCtrl'
 		  })
@@ -104,6 +117,7 @@
 			controller : 'engineerCtrl'
 		  })
 		  .when('/engineer-tools', {
+		  	title: 'Engineer Tools' + title,
 			templateUrl : erootdir+'engineertools.html',
 			controller : 'engineerCtrl'
 		  })
@@ -138,14 +152,17 @@
 		  	//controller: 'nestThermostatCtrl'
 		  })
 		  .when('/charges',{
+		  	title: 'Our Charges' + title,
 		  	templateUrl: crootdir + 'charges.html',
 		  	//controller : ''
 		  })
 		  .when('/team',{
 		  	templateUrl: crootdir + 'team.html',
+		  	title: 'About Us' + title,
 		  	//controller : ''
 		  })
 		  .when('/404',{
+		  	title: 'Oops, Page not Found' + title,
 		  	templateUrl: rootdir + '404.html'
 		  	//controller: 'nestThermostatCtrl'
 		  })
@@ -172,5 +189,9 @@
             page: $location.path()
           });
         });
+
+      	$rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+        	$rootScope.title = current.$$route.title;
+    	});
     }
   ]);
