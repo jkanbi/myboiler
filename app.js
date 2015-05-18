@@ -36,8 +36,9 @@
 		  .when('/manuals', {
 		  	title: 'Boiler Manuals' + title,
 	        templateUrl: manualsDir +'manuals.html',
-	        controller: 'manualsCtrl'
-	      }).when('/emanuals', {
+	        controller: 'manualsCtrl as ctrl'
+	      })
+	      .when('/emanuals', {
 	        templateUrl: manualsDir +'manuals.html',
 			controller : 'engineerCtrl'
 	      })
