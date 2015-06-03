@@ -157,9 +157,9 @@
 		  	templateUrl: crootdir + 'charges.html',
 		  	//controller : ''
 		  })
-		  .when('/team',{
-		  	templateUrl: crootdir + 'team.html',
+		  .when('/about',{
 		  	title: 'About Us' + title,
+		  	templateUrl: rootdir + 'about.html',
 		  	//controller : ''
 		  })
 		  .when('/404',{
