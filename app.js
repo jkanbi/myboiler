@@ -67,10 +67,6 @@
 			controller : 'blogCtrl',
 			templateUrl : crootdir+'blog.html'
 		  })
-		  .when('/eblog', {
-			templateUrl : erootdir+'blog.html',
-			controller : 'engineerCtrl'
-		  })
 		  .when('/blog', {
 		  	title: 'Blog' + title,
 			templateUrl : blogdir+'blog.html',
