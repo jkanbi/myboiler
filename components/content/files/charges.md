@@ -40,7 +40,7 @@ MyBoiler.com has clear 100% transparent charges. The rates are shown below. See 
 
 <br />
 
-*Charges are per hour with a one hour minimum charge and thereafter in 15 minute units. Some work can be carried out on Estimate or Fixed price basis.*
+*Charges are per hour with a one hour minimum charge and thereafter in 30 minute units. Some work can be carried out on Estimate or Fixed price basis.*
 
 <br /><br />
 
