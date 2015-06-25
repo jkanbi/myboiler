@@ -2,11 +2,13 @@
   "name": "myBoilerApp",
   "version": "3.0.0",
   "description": "MyBoiler.com initial application",
-  "repositary":{
-  	"type":"git",
-  	"url":"https://arated@bitbucket.org/arated/myboiler-v3.git"
-  	},
-  "dependencies": {},
+  "repositary": {
+    "type": "git",
+    "url": "https://arated@bitbucket.org/arated/myboiler-v3.git"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
   "devDependencies": {
     "angularfire": "^0.9.0",
     "browser-sync": "^1.8.3",
