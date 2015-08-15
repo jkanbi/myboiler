@@ -1,31 +1,34 @@
 <br />
 <br />
 
-###Services to help you with your system
+###Our Services
 
 <br />
 
-__Heating Services__
+__Smart Thermostats and Controls__
 
-+	Boiler Repairs and Installations
-+	Radiators and Pipes; Installations and Repairs
++	Nest Thermostats and Nest Protects (Nest Certified Professionals)
++	Honeywell Evohome and Complete System Controls (Honeywell Evohome Certified Installers)
++	British Gas Hive Active Heating 2
++	Tado Smart Controls
++	Standard Heating Controls, Multizone Heating Controls
+
+<br />
+
+__Additional Heating Services__
+
++	Boiler Installations and Replacements
++	Radiators and Pipes; Installations and Maintenance
 + 	Thermostatic Radiator Valves (TRVs)
 +	Cylinders and Hot water including Immersion Heaters
 +	Underfloor Heating (Polypipe, John Guest, Wavin and more)
-+	Heating Controls
 +	Powerflushing Services
 + 	Landlord Certificates and Annual Servicing
++	'A Rated' Energy Efficiency Upgrades
 
 <br />
 
-__Smart Controls__
-
-+	Nest Thermostats and Nest Protects (We are Nest Certified Professionals)
-+	Multizone Heating Controls
-+	Tado Smart Controls
-+	Honeywell Controls,Evohome and Internet Connected Thermostats (We are Evohome Certified Installers)
-
-<br />
+<!-- 
 
 __Solar Thermal Heating__
 
@@ -35,6 +38,8 @@ __Solar Thermal Heating__
 +	Design and Consulting
 
 <br />
+
+<!-- 
 
 __Gas Services__
 
@@ -52,7 +57,7 @@ __Design and Consulting__
 <br />
 
 
-<!-- 
+
 __Aftercare__
 
 +	Boiler Insurance Services 
