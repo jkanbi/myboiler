@@ -1,7 +1,22 @@
 #Company Charges
 <br />
 <br />
-MyBoiler.com has clear 100% transparent charges. The rates are shown below. See below for information on fixed price jobs. There is currently no VAT applicable.
+MyBoiler.com has clear 100% transparent charges. The rates are shown below. There is currently no VAT applicable.
+
+<br />
+<br />
+
+###Standard Set Prices
+
+<table border="1" style="width:100%; border: 1px solid grey; text-align:center;">
+			 	<tr><td> Nest Thermostat Install</td>   <td>  £70 1st device, £50 additional devices</td></tr>
+			 	<tr><td> Boiler Service inc System Check</td>   <td> £90</td></tr>
+				<tr><td> Gas Safety Certificate inc 2 Appliances  </td>  <td> £90</td></tr>
+</table>
+<br />
+
+
+See below for information on additional larger fixed price jobs.
 
 <br />
 <br />
@@ -46,7 +61,7 @@ MyBoiler.com has clear 100% transparent charges. The rates are shown below. See 
 
 **Fixed Price Work**
 
-Generally jobs are minimum 1 day,or on larger jobs such as boilers installs, are charged on a fixed price basis once one of our estimators come down and assess the job.
+Generally larger jobs are minimum 1 day,or on larger jobs such as boilers installs, are charged on a fixed price basis once one of our estimators come down and assess the job.
 
 <br />
 
