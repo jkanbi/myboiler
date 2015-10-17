@@ -1,11 +1,11 @@
 //'use strict';
-/* 
+/*
 myBoilerApp.service('myHeader',function()
 {
 	this.getUrl = function(url)
 	{
 		alert(url);
-		
+
 		if(url=="/engineer")
 		{
 			myBoilerApp.directive("ngHeader", function()
@@ -26,23 +26,23 @@ myBoilerApp.service('myHeader',function()
 myBoilerApp.service('contactsService', function($location)
 {
 	var url = $location.path();
-	
+
 	//alert(url);
-	
+
 	var subject, comment, usrSalutation, captchaCode, usrType;
-			
+
 	var idno = Math.floor((Math.random()*10000) + 1);
-	
+
 	var now = new Date();
 	var uniqueId = now.getTime();
 	var TimeStamp = now.toGMTString();
 
-	var myDataRef = new Firebase('https://myboiler.firebaseio.com/posts/contacts');
+	var myDataRef = new Firebase('https://myboiler.firebaseio.com/posts/contact_form_posts');
 
-		
+
 	this.saveContactInfo = function(details)
-	{		
-		
+	{
+
 		/*
 		if(url == "/consumer-contact")
 		{
@@ -62,7 +62,7 @@ myBoilerApp.service('contactsService', function($location)
 		{
 			usrType = details.usrType;
 		}
-		
+
 
 		if(details.usrsalutation==undefined || details.usrsalutation=='')
 		{
@@ -72,7 +72,7 @@ myBoilerApp.service('contactsService', function($location)
 		{
 			usrSalutation = details.usrsalutation;
 		}
-		
+
 		if(details.subject==undefined)
 		{
 			subject = "N/A";
@@ -81,7 +81,7 @@ myBoilerApp.service('contactsService', function($location)
 		{
 			subject = details.subject;
 		}
-		
+
 		if(details.captcha==undefined)
 		{
 			captchaCode = "N/A";
@@ -90,11 +90,11 @@ myBoilerApp.service('contactsService', function($location)
 		{
 			captchaCode = details.captcha;
 		}
-		
+
 		//alert(usrSalutation+" "+details.first_name);
-		
+
 		var newContactRef = myDataRef.push();
-		
+
 		newContactRef.set(
 		{
 			TimeStamp : TimeStamp,
