@@ -16,8 +16,8 @@ myBoilerApp.service('saveDataService', function()
 	//used to generate unique non sequential no for the id:	
 	var newno = Math.floor((Math.random()*10000) + 1);
 			
-	var myDataRef = new Firebase('https://myboiler.firebaseio.com/posts/jobLeads');
 		
+	var myDataRef = new Firebase('https://myboiler.firebaseio.com/posts/job_form_posts');
 	this.saveInfo = function(selected)
 	{		
 		if(selected.subscribefor==undefined || selected.subscribefor==false) {
