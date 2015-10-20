@@ -1,7 +1,7 @@
 #Company Charges
 <br />
 <br />
-MyBoiler.com has clear 100% transparent charges. The rates are shown below. There is currently no VAT applicable.
+MyBoiler.com has clear 100% transparent charges. The rates are shown below. All prices are subject to VAT.
 
 <br />
 <br />
@@ -26,20 +26,20 @@ See below for information on additional larger fixed price jobs.
 ###Mon-Fri
 
 <table border="1" style="width:100%; border: 1px solid grey; text-align:center;">
-			 	<tr><td> 8.00am - 5.00pm</td>   <td>  £60 </td></tr>
-			 	<tr><td> 5.00pm - 9.00pm </td>   <td> £80</td></tr>
-				<tr><td>9.00pm - 12.00am  </td>  <td> £100</td></tr>
-			 	<tr><td>12.00am - 8.00am  </td>  <td> £120</td></tr>
+			 	<tr><td> 8.00am - 5.00pm</td>   <td>  £80 </td></tr>
+			 	<tr><td> 5.00pm - 9.00pm </td>   <td> £100</td></tr>
+				<tr><td>9.00pm - 12.00am  </td>  <td> £120</td></tr>
+			 	<tr><td>12.00am - 8.00am  </td>  <td> £140</td></tr>
 </table>
 <br />
 
 ###Saturday
 
 <table border="1" style="width:100%; border: 1px solid grey; text-align:center">		
-				 <tr><td> 8.00am - 5.00pm</td>   <td>  £75</td></tr>
-				 <tr><td> 5.00pm - 9.00pm </td>    <td>  £95</td></tr>
-				 <tr><td>9.00pm - 12.00am  </td>   <td>   £115</td></tr>
-				 <tr><td>12.00am - 8.00am  </td>   <td>  £135</td></tr>
+				 <tr><td> 8.00am - 5.00pm</td>   <td>  £95</td></tr>
+				 <tr><td> 5.00pm - 9.00pm </td>    <td>  £115</td></tr>
+				 <tr><td>9.00pm - 12.00am  </td>   <td>   £135</td></tr>
+				 <tr><td>12.00am - 8.00am  </td>   <td>  £155</td></tr>
 </table>
 
 <br />
@@ -47,10 +47,10 @@ See below for information on additional larger fixed price jobs.
 ###Sunday
 
 <table border="1" style="width:100%; border: 1px solid grey; text-align:center">
-				 <tr><td> 8.00am - 5.00pm</td>   <td>  £90</td></tr>
-				 <tr><td> 5.00pm - 9.00pm </td>  <td>  £110</td></tr>
-				 <tr><td>9.00pm - 12.00am  </td>   <td>  £130</td></tr>
-				 <tr><td>12.00am - 8.00am  </td>   <td>  £150</td></tr>
+				 <tr><td> 8.00am - 5.00pm</td>   <td>  £110</td></tr>
+				 <tr><td> 5.00pm - 9.00pm </td>  <td>  £130</td></tr>
+				 <tr><td>9.00pm - 12.00am  </td>   <td>  £150</td></tr>
+				 <tr><td>12.00am - 8.00am  </td>   <td>  £170</td></tr>
 </table>
 
 <br />
@@ -97,4 +97,3 @@ Will contain full description of work carried out, time started and finished, fu
 **Congestion and Parking**
 
 Congestion charges and Parking costs are charged additional to job costs.
-
