@@ -158,6 +158,10 @@
 		  	templateUrl: rootdir + 'about.html',
 		  	//controller : ''
 		  })
+			.when('/care-plans',{
+				title: 'Care Plans' +title,
+				templateUrl:crootdir + 'careplans.html'
+			})
 		  .when('/404',{
 		  	title: 'Oops, Page not Found' + title,
 		  	templateUrl: rootdir + '404.html'
