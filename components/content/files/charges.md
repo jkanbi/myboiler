@@ -10,7 +10,7 @@ MyBoiler.com has clear 100% transparent charges. The rates are shown below. All 
 
 <table border="1" style="width:100%; border: 1px solid grey; text-align:center;">
 				<tr><td> Nest Thermostat 3rd Generation Supply and Fit</td>   <td> From £240 </td></tr>
-			 	<tr><td> Nest Thermostat 3rg Generation Install only </td>   <td>  From £74</td></tr>
+			 	<tr><td> Nest Thermostat 3rd Generation Install only </td>   <td>  From £74</td></tr>
 			 	<tr><td> Boiler Service (Basic and Interim)</td>   <td> £60</td></tr>
 				<tr><td> Premium Boiler Service, inc System Check</td>   <td> From £90</td></tr>
 				<tr><td> Gas Safety Certificate inc 2 Appliances  </td>  <td> £60</td></tr>
