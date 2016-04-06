@@ -69,7 +69,7 @@ Generally larger jobs are minimum 1 day,or on larger jobs such as boilers instal
 
 **Payment Methods**
 
-We accept the following payment methods: Cash upon Invoice, Cheque, Debit/Credit Cards, Paypal, Google Wave and also Bitcoin
+We accept the following payment methods: Cash upon Invoice, Bank Transfer, Cheque, Debit/Credit Cards and Paypal
 
 <div id="creditcards" style="float:none">
 	<ul class="credit-cards p10 clearfix" style="display:inline; margin: 0 auto;">
@@ -77,8 +77,6 @@ We accept the following payment methods: Cash upon Invoice, Cheque, Debit/Credit
 	            <li><img src="//cdn.shopify.com/s/files/1/0758/1671/t/1/assets/icon-cc-mastercard.png?6948167398204912247" alt="MasterCard"></li>
 	            <li><img src="//cdn.shopify.com/s/files/1/0758/1671/t/1/assets/icon-cc-amex.png?6948167398204912247" alt="Amex"></li>
 	            <li><img src="//cdn.shopify.com/s/files/1/0758/1671/t/1/assets/icon-cc-paypal.png?6948167398204912247" alt="PayPal"></li>
-	            <li><img src="//cdn.shopify.com/s/files/1/0758/1671/t/1/assets/icon-cc-google.png?6948167398204912247" alt="Google Wallet"></li>
-	            <li><img src="//cdn.shopify.com/s/files/1/0758/1671/t/1/assets/icon-cc-bitcoin.png?6948167398204912247" alt="Bitcoin"></li>
 	</ul>
 </div>
 
