@@ -47,7 +47,7 @@
 	        controller:'documentsCtrl',
 	      })
 		  .when('/consumer-engineer-search', {
-		  	title: 'Engineer Request' +title,
+		  	title: 'Request a Pro' +title,
 			templateUrl: consumerDir +'find-engineer/newengineerSearch.html',
 			controller: 'enggSearchCtrl'
 		  })
