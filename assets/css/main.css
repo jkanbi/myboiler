@@ -126,7 +126,7 @@ a:hover,a:focus{outline:none; text-decoration:none}
 .input-bg3{ background:url(../images/sprite.png) 0px -145px no-repeat; border:none; color: #555555; display: block; font-size:14px; height:40px; padding:6px 12px; vertical-align: middle; width:140px; margin-right:3px }
 .boilername{background:#f5f5f5; border-bottom:2px solid #d4d3d3; border-top:2px solid #d4d3d3; width:100%; overflow:hidden}
 .boilername-top{border-top:2px solid #d4d3d3;}
-#footer{width:100%;background:#9da6ae;}
+#footer{width:100%;background:#565A5C;}
 ul.footer-signin{margin:0px; padding:0px}
 ul.footer-signin li{float:left; display:inline-block; padding-right:15px; color:#fff}
 ul.footer-signin li a{color:#fff}
