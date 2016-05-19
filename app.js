@@ -10,6 +10,7 @@
 	var erootdir = "views/engineer/";
 	var blogdir = "components/blog/";
 	var title = ' - My Boiler';
+	var views = "views/"
 
 	//http://stackoverflow.com/questions/24227239/unknown-provider-firebaseprovider-firebase
 	var myBoilerApp = angular.module('myBoiler',['ngRoute', 'firebase','blogApp']);
@@ -161,6 +162,9 @@
 			.when('/care-plans',{
 				title: 'Care Plans' +title,
 				templateUrl:crootdir + 'careplans.html'
+		  .when('/special-offers',{
+				title: 'Special Offers' +title,
+				templateUrl:views + 'special-offers/special-offers.html'
 			})
 		  .when('/404',{
 		  	title: 'Oops, Page not Found' + title,
