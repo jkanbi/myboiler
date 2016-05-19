@@ -161,7 +161,8 @@
 		  })
 			.when('/care-plans',{
 				title: 'Care Plans' +title,
-				templateUrl:crootdir + 'careplans.html'
+				templateUrl:views + 'care-plans/care-plans.html'
+			})
 		  .when('/special-offers',{
 				title: 'Special Offers' +title,
 				templateUrl:views + 'special-offers/special-offers.html'
