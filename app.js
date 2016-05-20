@@ -151,7 +151,7 @@
 		  })
 		  .when('/charges',{
 		  	title: 'Our Charges' + title,
-		  	templateUrl: crootdir + 'charges.html',
+		  	templateUrl: views + 'charges/charges.html',
 		  	//controller : ''
 		  })
 		  .when('/about',{
