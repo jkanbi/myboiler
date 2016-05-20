@@ -136,19 +136,6 @@
 			templateUrl: userLoginDir+'account.html',
 			controller: 'accountCtrl'
 		  })
-		  .when('/nest',{
-		  	templateUrl: crootdir + 'nest-tpl.html',
-		  	//controller: 'nestThermostatCtrl'
-		  })
-		  .when('/nest-thermostat',{
-		  	templateUrl: crootdir + 'nest-thermostat-tpl.html',
-		  	//controller: 'nestThermostatCtrl'
-		  })
-		  .when('/nest-pro',{
-		  	templateUrl: erootdir + 'nest-pro-tpl.html',
-		  	controller : 'engineerCtrl'
-		  	//controller: 'nestThermostatCtrl'
-		  })
 		  .when('/charges',{
 		  	title: 'Our Charges' + title,
 		  	templateUrl: views + 'charges/charges.html',
