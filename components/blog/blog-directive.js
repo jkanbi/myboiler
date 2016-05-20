@@ -1,5 +1,5 @@
 /*  Directives  */
-myBoilerApp.directive('markdown', function ($http) {
+myBoilerApp.directive('blogMarkdown', function ($http) {
     var converter = new Showdown.converter();
     return {
       restrict: 'A',
