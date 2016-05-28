@@ -42,7 +42,7 @@
             cookieDeclineButtonText: "DECLINE COOKIES",
             cookieResetButtonText: "RESET COOKIES FOR THIS WEBSITE",
             cookieWhatAreLinkText: "What are cookies?",
-            cookieNotificationLocationBottom: false, // top or bottom - they are your only options, so true for bottom, false for top            
+            cookieNotificationLocationBottom: true, // top or bottom - they are your only options, so true for bottom, false for top            
             cookiePolicyPage: false,
             cookiePolicyPageMessage: 'Please read the information below and then choose from the following options',
             cookieDiscreetLink: false,
